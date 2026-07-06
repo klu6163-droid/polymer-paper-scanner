@@ -1,0 +1,2066 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>高分子物理论文日报 · 2026-06-30</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+  color: #222;
+  line-height: 1.7;
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar {
+  width: 240px;
+  position: fixed;
+  top: 0; left: 0;
+  height: 100vh;
+  background: #f7f8fa;
+  border-right: 1px solid #e0e0e0;
+  overflow-y: auto;
+  padding: 20px 12px;
+  z-index: 100;
+}
+.sidebar h2 {
+  font-size: 15px;
+  color: #4a7;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #4a7;
+  padding-bottom: 4px;
+}
+.toc-item {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  padding: 4px 6px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-bottom: 3px;
+  transition: background 0.2s;
+}
+.toc-item:hover {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+.main {
+  margin-left: 240px;
+  padding: 32px 24px;
+  max-width: 860px;
+  width: calc(100% - 240px);
+}
+h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+.summary {
+  color: #666;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+.card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.card-header h3 {
+  font-size: 18px;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+.title-en {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 8px;
+}
+.card-meta {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 12px;
+}
+.meta-label {
+  color: #888;
+}
+.card-abstract {
+  font-size: 14px;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 6px;
+}
+.card-notes {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.card-notes h4 {
+  font-size: 15px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  color: #4a7;
+}
+.card-notes ul, .card-notes ol {
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+.card-notes p {
+  margin-bottom: 6px;
+}
+.card-footer {
+  font-size: 13px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}
+.card-footer a {
+  color: #06c;
+}
+.other-section {
+  margin-top: 32px;
+}
+.other-section h2 {
+  border-bottom: 2px solid #4a7;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+}
+.other-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.other-table th {
+  background: #f7f8fa;
+  padding: 6px 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.other-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+}
+.other-table a {
+  color: #06c;
+}
+@media (max-width: 800px) {
+  .sidebar { display: none; }
+  .main { margin-left: 0; width: 100%; max-width: 100%; }
+}
+</style>
+</head>
+<body>
+<div class="sidebar">
+  <h2>📑 目录导航</h2>
+  <a href="#p1" class="toc-item">任意尺寸水团簇$(\text{H}_2\text{O})_n$的线性标度无势数据...</a>
+<a href="#p2" class="toc-item">从力测量中恢复具有应变梯度弹性界面的弹性子域：反平面剪切设定</a>
+<a href="#p3" class="toc-item">过冷液体中涨落诱导的动力学交叉的微观理论</a>
+<a href="#p4" class="toc-item">增强扩散采样：利用扩散模型高效实现稀有事件采样与自由能计算</a>
+<a href="#p5" class="toc-item">经典力场对蛋白质中金属配位模式的局限性：整合素$\alpha_V\beta_3$...</a>
+<a href="#p6" class="toc-item">非马尔可夫系统中通过能量回收的超快定向输运</a>
+<a href="#p7" class="toc-item">二元活性手性系统中的相位时间晶体与配对</a>
+<a href="#p8" class="toc-item">反应网络的集总：通用参数与关键参数</a>
+<a href="#p9" class="toc-item">关于使用图神经网络进行增材制造短纤维热塑性塑料静态响应代理建模的研究</a>
+<a href="#p10" class="toc-item">几何介导的密集有序颗粒堆积中的剪切软化</a>
+<a href="#p11" class="toc-item">流-极性解耦与稠密细菌活性流体中介观有序下的普适迁移率增强</a>
+<a href="#p12" class="toc-item">由活性机器人组成的磁性鞭毛中搏动的涌现</a>
+<a href="#p13" class="toc-item">网格蛋白介导的内吞作用中的通路变异性、外壳硬化与机械适应</a>
+<a href="#p14" class="toc-item">组织顶点模型中的应力张量场和介观应力</a>
+<a href="#p15" class="toc-item">非手性 D4h 对称锌酞菁凝聚体中的自发对称性破缺与涌现螺旋性</a>
+<a href="#p16" class="toc-item">剪纸切口产生的尺度耦合控制液晶弹性体的涌现力学行为</a>
+<a href="#p17" class="toc-item">单一化学异质性在产生各向异性触觉灵敏度及软滑动摩擦现象中的作用</a>
+
+</div>
+<div class="main">
+  <h1>📚 高分子物理论文日报 · 2026-06-30</h1>
+  <div class="summary">
+    > 共 17 篇高分子物理相关论文 · 从 arXiv cond-mat.soft / mtrl-sci / chem-ph / app-ph 扫描
+  </div>
+  
+<div class="card" id="p1">
+  <div class="card-header">
+    <h3>1. 任意尺寸水团簇$(\text{H}_2\text{O})_n$的线性标度无势数据驱动分子动力学</h3>
+    <p class="title-en">Linear-Scaling Potential-Free Data-Driven Molecular Dynamics for Arbitrary-Sized Water Clusters $(\text{H}_2\text{O})_n$</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2412.04442" target="_blank">2412.04442</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> Hongyu Yan, Yong Wei, Minghan Chen, Hanning Chen
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> physics.chem-ph
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 传统分子动力学（MD）模拟方法，如第一性原理分子动力学（AIMD）和经验力场分子动力学（EFFMD），在物理精度与计算效率之间面临显著权衡。本文提出了一种线性标度无势函数数据驱动分子动力学（PDMD）框架，用于预测任意尺寸水团簇 (H₂O)ₙ 的系统能量和原子力。具体而言，PDMD 采用基于高斯的原子几何描述符生成高维等变特征，然后利用 ChemGNN（一种无需先验知识即可自适应学习原子化学环境的图神经网络模型）进行后续处理。通过迭代自洽训练方法，收敛后的 PDMD 在能量预测上达到了 1.39 meV/atom 的平均绝对误差，在相同数据集上其精度至少是 DeepMD、MACE、NequIP 和 SevenNet 等其他先进模型的 2.6 倍。因此，线性标度 PDMD 能够在数量级更低的计算成本下复现水团簇的 AIMD 性质，这通过对包含数千个及以上分子体系的模拟得到了验证。这些结果表明，所提出的 PDMD 具有多相预测能力，能够在保持 AIMD 级精度的同时实现超快速、通用的 MD 模拟。这种精度是通过高效捕捉多体势实现的，这些多体势在许多多原子体系中至关重要，但在 EFFMD 中往往缺失。此外，我们构建了一个包含超过 300,000 个 (H₂O)ₙ 结构的第一性原理数据集，并在统一的 PyTorch Geometric 框架中进行了标准化，以支持对分子动力学人工智能方法的可扩展评估。
+  </div>
+  <div class="card-notes">
+    <h1>论文阅读笔记</h1>
+<h2>一句话总结</h2>
+<p>本文提出了一种线性标度的无势函数数据驱动分子动力学（PDMD）框架，用于任意大小水簇的系统能量和原子力预测，在保持从头算分子动力学（AIMD）精度的同时，实现了数量级更低的计算成本。</p>
+<h2>研究问题</h2>
+<p>传统分子动力学模拟方法（如AIMD和经验力场MD）在物理精度和计算效率之间存在显著权衡，如何实现既高效又精确的分子动力学模拟是核心问题。</p>
+<h2>核心方法</h2>
+<ul>
+<li>采用基于高斯的原子几何描述子生成高维等变特征。</li>
+<li>利用图神经网络模型ChemGNN自适应学习原子化学环境，无需先验知识。</li>
+<li>通过迭代自洽训练方式，实现线性标度的势函数自由数据驱动分子动力学（PDMD）。</li>
+</ul>
+<h2>主要结果</h2>
+<ul>
+<li>PDMD在能量预测上达到平均绝对误差1.39 meV/atom，相比DeepMD、MACE、NequIP和SevenNet等模型，精度提升至少2.6倍。</li>
+<li>能够以线性复杂度重现AIMD的水簇性质，模拟数千及以上分子系统时计算成本大幅降低。</li>
+<li>构建了包含超过30万个(H₂O)ₙ结构的从头算数据集，并标准化为统一的PyTorch Geometric框架。</li>
+</ul>
+<h2>潜在价值</h2>
+<p>该工作为大规模、高精度、通用目的分子动力学模拟提供了有效方案，尤其适用于需要捕捉多体势的多元体系，有助于推动数据驱动方法在计算化学和材料科学领域的实际应用。</p>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2412.04442" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2412.04442" target="_blank">PDF</a>
+  </div>
+</div>
+
+<div class="card" id="p2">
+  <div class="card-header">
+    <h3>2. 从力测量中恢复具有应变梯度弹性界面的弹性子域：反平面剪切设定</h3>
+    <p class="title-en">Recovering elastic subdomains with strain-gradient elastic interfaces from force measurements: the antiplane shear setting</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2509.15171" target="_blank">2509.15171</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> Govanni Granados, Jeremy L. Marzuola, Casey Rodriguez
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> cond-mat.mtrl-sci
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 我们提出并研究了一个关于具有应变梯度界面的弹性体中反平面剪切的新反问题。该设定为一个均匀各向同性弹性体，其中包含一个夹杂物，由赋予高阶表面能的薄界面分隔。利用外部边界上的位移-应力测量（通过特定的Dirichlet-to-Neumann映射表示），我们证明了在恢复剪切参数、界面参数以及夹杂物形状方面的唯一性。为了解决形状反问题，我们调整了因子分解方法，以考虑高阶边界算子及其非平凡零空间带来的复杂性。所得特征化依赖于采样点对，而非经典因子分解方法中使用的单点测试。在固定内部参考点后，重建过程简化为单点采样算法。针对后一阶段，数值实验展示了所提重建方法的可行性，并表明该框架在内部不均匀性（包括受损子区域）的无损检测方面具有潜力。
+  </div>
+  <div class="card-notes">
+    <p>好的，收到您的指令。作为资深的AI研究员，我已深度阅读您提供的论文主体部分。下面是我生成的完整阅读笔记，它整合了第一轮的初步总结，并对您提出的具体问题进行了详细解答。</p>
+<p>---</p>
+<h2>论文完整阅读笔记</h2>
+<p><b>论文标题</b>: Recovering elastic subdomains with strain-gradient elastic interfaces from force measurements: the antiplane shear setting</p>
+<p><b>作者</b>: Govanni Granados, Jeremy L. Marzuola, Casey Rodriguez</p>
+<p><b>ArXiv ID</b>: 2509.15171</p>
+<ul>
+<li><b>一句话总结</b></li>
+</ul>
+<p>提出了一种基于<b>应变梯度弹性界面</b>的数学模型，并证明了通过边界力-位移数据可以唯一地反演内部夹杂物的形状和界面参数。</p>
+<ul>
+<li><b>研究背景与动机</b></li>
+<li><b>科学问题</b>：在无损检测中，如何通过物体表面的力学测量，唯一确定其内部被具有复杂<b>微观结构界面</b>包裹的亚区域（如损伤区、夹杂物）的形状和力学参数？传统弹性力学模型忽略了界面的高阶效应（如弯曲刚度、应变梯度能），但在复合材料、含涂层材料等体系中，这些效应至关重要。</li>
+<li><b>与已有工作的差异</b>：</li>
+</ul>
+<ol>
+<li><b>模型创新</b>：首次将<b>Rodriguez应变梯度弹性界面模型</b>（一种比Gurtin-Murdoch和Steigmann-Ogden模型更一般的理论）引入到弹性反问题中。该模型通过在界面能量中加入<b>表面应变梯度项（$\ell_s^2$项）</b>，不仅能描述界面的拉伸和弯曲，还能抵抗<b>测地线畸变</b>，并能正则化经典弹性理论中裂纹尖端的奇异性。</li>
+<li><b>算法创新</b>：针对由高阶边界算子导致的<b>非平凡零空间（常数函数）</b>问题，对经典的反演算法（因子分解法）进行了关键推广，提出了<b>“双点采样”</b>策略，克服了经典单点采样方法在此类问题中的失效问题。</li>
+</ol>
+<ul>
+<li><b>核心材料/体系</b></li>
+<li><b>物理模型</b>：一个均匀、各向同性的线弹性体（$\mathcal O$），其内部包含一个均匀、各向同性的子域（$\mathcal D$，即“夹杂物”）。$\mathcal D$与主体材料之间由一个<b>零厚度的界面（$\mathcal I = \partial \mathcal D$）</b> 隔开。</li>
+<li><b>数学简化</b>：为降低数学复杂性，论文聚焦于<b>反平面剪切（antiplane shear）</b> 这一特殊变形模式。这意味着所有位移都沿同一方向（$x_3$方向），且问题简化为二维。</li>
+<li>三维体：$\mathcal O = \Omega \times (-h, h)$，$\mathcal D = D \times (-h, h)$</li>
+<li>位移场：$\boldsymbol u = u(x_1, x_2) \boldsymbol e_3$</li>
+<li><b>参数设定</b>：外部弹性体剪切模量 $\mu_o = 1$（通过无量纲化），夹杂物剪切模量 $\mu_i = \mu$，界面剪切模量 $\mu_s$，界面应变梯度特征长度 $\ell_s$。论文考虑了 $\mu > 1$（夹杂物更硬）和 $\mu < 1$（夹杂物更软，如损伤区）两种情况。</li>
+</ul>
+<ul>
+<li><b>关键物理机理</b></li>
+<li><b>总能量泛函</b>：系统的总势能由三部分组成：</li>
+</ul>
+<p>$$E_{\text{total}} = E_{\mathcal{O \backslash D}} + E_{\mathcal{D}} + E_{\partial \mathcal{D}}$$</p>
+<ul>
+<li><b>体域能量</b>：经典线弹性体应变能，由Lamé参数刻划。</li>
+<li><b>界面应变梯度能量（核心）</b>：</li>
+</ul>
+<p>$$E_{\partial \mathcal D}(\boldsymbol u) = \int_{\partial \mathcal D} \left[ \frac{\mu_s}{2}|\partial_s u|^2 + \frac{\ell_s^2 \mu_s}{2} |\partial_s^2 u|^2 \right] \, ds$$</p>
+<p>在反平面剪切简化下，这里只保留了界面切向拉伸项（$\partial_s u$）和<b>应变梯度项（$\partial_s^2 u$）</b>。后者正是本文区别于Gurtin-Murdoch和Steigmann-Ogden模型的关键，它引入了界面抵抗“弯曲”或“切向梯度变化”的能力。</p>
+<ul>
+<li><b>控制方程（正演模型）</b>：通过哈密顿变分原理，得到完整的控制偏微分方程组：</li>
+</ul>
+<p>$$\begin{cases}</p>
+<p>-\Delta u = 0 & \text{in} \enspace \Omega \backslash D, \\</p>
+<p>-\mu \Delta u = 0 & \text{in} \enspace D, \\</p>
+<p>[\![\partial_\nu u ]\!] = \mathscr{B}(u) & \text{on} \enspace \partial D, \\</p>
+<p>u = f & \text{on} \enspace \partial \Omega.</p>
+<p>\end{cases}$$</p>
+<p>其中 $\mathscr{B}$ 是四阶边界算子：</p>
+<p>$$\mathscr{B}(u) = \partial^2_s (\mu_s \ell_s^2 \partial^2_s u) - \partial_s(\mu_s \partial_s u)$$</p>
+<p>这个算子源自界面的高阶能量，其<b>零空间由常数函数张成（$\text{Null}(\mathscr{B}) = \text{span}\{1\}$）</b>。这是导致经典反演算法失效的根本原因。</p>
+<ul>
+<li><b>反演路径</b>：利用边界上的<b>Dirichlet-to-Neumann（DtN）算子</b> $\Lambda$，该算子将给定的边界位移 $f$ 映射到所需的边界力 $\partial_\nu u$。然后比较有夹杂物 ($\Lambda$) 和无夹杂物 ($\Lambda_0$) 的情况，通过分析其差值 $\Lambda - \Lambda_0$ 来反演 $D$ 和 $\mu, \mu_s, \ell_s$。</li>
+</ul>
+<ul>
+<li><b>主要表征结果</b></li>
+<li><b>正问题适定性</b>：严格证明了在特定的Sobolev空间 $\mathcal{H}$ 中，正问题（方程1）是<b>适定的</b>（存在唯一且连续依赖边界条件）。需要特别注意，解 $u$ 在 $\partial D$ 上具有<b>$H^{7/2}$ 的高正则性</b>，这是处理高阶边界算子的关键。</li>
+<li><b>参数唯一性</b>：证明了DtN映射 $\Lambda$ 可以<b>唯一确定</b>界面参数 $\mu_s$ 和 $\ell_s$，以及夹杂物的剪切模量 $\mu$。</li>
+<li><b>形状唯一性</b>：证明了DtN映射的差 $\Lambda - \Lambda_0$ 可以<b>唯一地重建</b>夹杂物 $D$。</li>
+<li><b>算法可行性（数值实验）</b>：通过数值实验验证了所提出的<b>改进因子分解法</b>能够有效地重建夹杂物的形状。</li>
+</ul>
+<ul>
+<li><b>性能指标</b></li>
+<li>无量化性能指标（如误差、重建时间等）在论文中给出，论文侧重<b>定性证明</b>算法能正确重建形状。</li>
+</ul>
+<ul>
+<li><b>创新点</b></li>
+</ul>
+<ol>
+<li><b>理论框架创新</b>：首次将<b>应变梯度弹性界面模型</b>引入弹性反问题领域，为描述具有微观结构界面的材料提供了更精确的数学物理模型。</li>
+<li><b>反演算法创新</b>：针对高阶边界算子$\mathscr{B}$的<b>非平凡零空间</b>，创造性地将经典的<b>因子分解法</b>推广为<b>“双点采样”算法</b>，成功解决了经典方法在此类问题中的理论障碍。</li>
+<li><b>数学分析严密</b>：论文提供了严格的正问题适定性、解的椭圆正则性以及反问题唯一性的证明，为整个方法奠定了坚实的数学基础。</li>
+</ol>
+<ul>
+<li><b>与我研究的相关性</b></li>
+<li><b>间接相关（高价值）</b>：虽然论文属于数学物理与反问题领域，但其核心的<b>应变梯度弹性界面</b>模型为高分子物理中的<b>受限高分子层</b>、<b>纳米填料周围界面区域</b>、<b>共混物界面</b>的力学建模提供了极具启发性的框架。特别是：</li>
+<li><b>高分子受限效应</b>：高分子链在界面附近（如纳米粒子表面、薄膜表面）的构象和动力学受到限制，这可以类比于界面上的“高阶”能量（抵抗变形和梯度变化）。</li>
+<li><b>复合材料均匀化</b>：该模型为更精确地预测考虑界面效应的复合材料宏观力学性能（如模量、强度）提供了新的数学工具。</li>
+<li><b>反问题思想</b>：尽管我们可能不做正向检测，但其“通过宏观测量反演微观结构”的思维，对于我们理解高分子材料的形貌-性能关系很有裨益。</li>
+</ul>
+<ul>
+<li><b>局限性</b></li>
+<li><b>几何与模式的简化</b>：论文将问题限制在<b>反平面剪切</b>变形和<b>二维</b>几何（椭圆/圆）中。推广到<b>三维</b>和<b>一般平面应力/应变</b>状态，数学和计算复杂性将显著增加。</li>
+<li><b>对经典算法的修改复杂</b>：为了适应零空间而引入的“双点采样”策略，虽然在数学上巧妙，但相比经典的单点因子分解法，数值实现更复杂。它需要选择一个<b>内部参考点</b>，这个点的选择可能影响最终结果的稳定性和精度。</li>
+<li><b>数值实验有限</b>：论文只提供了一个简单的数值算例。其对于<b>强噪声</b>、<b>不规则几何形状</b>和<b>多夹杂物</b>情况的鲁棒性和效率尚未进行系统验证，距实际工程应用还有距离。</li>
+</ul>
+<ul>
+<li><b>后续可跟进方向</b></li>
+<li><b>算法改进与扩展</b>：</li>
+<li>研究“双点采样”算法对噪声、参考点选择、初始猜测的敏感性。</li>
+<li>将该方法推广到<b>三维</b>和<b>一般变形模式</b>。</li>
+<li>研究该框架下<b>多夹杂物</b>的反演问题。</li>
+<li><b>应用启发</b>：</li>
+<li>尝试将应变梯度界面模型<b>简化</b>，用于高分子物理中，比如建立一个<b>现象学模型</b>，将纳米填料周围的“界面层”效应通过类似本构关系的形式引入到宏观弹性模量计算中，验证其有效性。</li>
+<li>思考该模型是否能用于描述<b>可逆交联网络</b>（如动态共价键、超分子网络）在界面附近的力学行为。</li>
+</ul>
+<h3>对第一轮问题的详细解答</h3>
+<ol>
+<li><b>具体的能量泛函形式</b>：</li>
+</ol>
+<ul>
+<li><b>总能量</b>：(3维情形) $E_{\text{total}} = E_{\mathcal O \backslash \mathcal D}(\boldsymbol u) + E_{\mathcal D}(\boldsymbol u) + E_{\partial \mathcal D}(\boldsymbol u)$。</li>
+<li><b>体域能量</b>：$E_{\mathcal B}(\boldsymbol u) = \int_{\mathcal B} \frac{\lambda}{2} (\mathrm{tr}\, \boldsymbol \epsilon)^2 + \mu |\boldsymbol \epsilon|^2 dV$。</li>
+<li><b>界面能量（一般形式）</b>：</li>
+</ul>
+<p>$$E_{\partial \mathcal D}(\boldsymbol u) = \int_{\partial \mathcal D} \left[ \frac{\lambda_s}{2}(\mathrm{tr}\, \boldsymbol \epsilon_s)^2 + \mu_s |\boldsymbol \epsilon_s|^2 + \ell_s^2 \left( \frac{\lambda_s}{2}|\nabla_s \mathrm{tr} \boldsymbol \epsilon_s|^2 + \mu_s |\nabla_s \boldsymbol \epsilon_s|^2 \right) + \frac{\zeta}{2}(\mathrm{tr}\, \boldsymbol \kappa_s)^2 + \eta |\boldsymbol \kappa_s|^2 \right] dA$$</p>
+<p>其中$\boldsymbol \epsilon_s$是<b>表面应变张量</b>（衡量拉伸），$\boldsymbol \kappa_s$是<b>相对法曲率张量</b>（衡量弯曲），$\ell_s^2$项是<b>表面应变梯度项</b>（这是Rodriguez模型的推广）。在反平面剪切简化下，该界面能量退化为论文使用的形式：</p>
+<p>$$E_{\partial D}(u) = \int_{\partial D} \left( \frac{\mu_s}{2}|\partial_s u|^2 + \frac{\ell_s^2 \mu_s}{2} |\partial_s^2 u|^2 \right) ds$$</p>
+<p>这里 $\zeta = \eta = 0$，因为反平面剪切不产生面内弯曲，只保留了切向拉伸及其梯度。$\ell_s^2$项的存在使其区别于前人的Gurtin-Murdoch和Steigmann-Ogden模型。</p>
+<ol>
+<li><b>正演问题的推导</b>：</li>
+</ol>
+<ul>
+<li>通过变分法，从总能量泛函的变分为0出发。</li>
+<li>经过积分后，得到<b>弱形式</b>：对任意试函数 $\varphi \in \mathcal{H} \cap H^1_0(\Omega)$，有</li>
+</ul>
+<p>$$\int_{\Omega \backslash D} \nabla u \cdot \nabla \varphi dx + \int_{D} \mu \nabla u \cdot \nabla \varphi dx + \int_{\partial D} \mu_s \partial_s u \partial_s \varphi ds + \int_{\partial D} \mu_s \ell_s^2 \partial_s^2 u \partial_s^2 \varphi ds = 0$$</p>
+<ul>
+<li>由弱形式，通过分部积分并利用变分基本引理，得到<b>强形式</b>的偏微分方程组（如方程 \eqref{bvp} 所示）。边界条件 $\mathscr{B}(u)$ 正是从界面能量变分得到的<b>自然边界条件</b>。</li>
+</ul>
+<ol>
+<li><b>DtN映射的具体定义</b>：</li>
+</ol>
+<ul>
+<li><b>定义</b>：算子 $\Lambda: H^{1/2}(\partial \Omega) \rightarrow H^{-1/2}(\partial \Omega)$，对于给定的边界位移 $f$，它返回支撑该位移所需的边界力（法向应力）的幅值。</li>
+<li><b>数学表达式</b>：$\Lambda f = \partial_\nu u \big|_{\partial \Omega}$，其中 $u$ 是边值问题 \eqref{bvp} 的解。同样，$\Lambda_0 f = \partial_\nu u_0 \big|_{\partial \Omega}$，其中 $u_0$ 是无夹杂物时拉普拉斯问题的解。</li>
+</ul>
+<ol>
+<li><b>因子分解法的关键技术细节</b>：</li>
+</ol>
+<ul>
+<li><b>经典因子分解法为何失效</b>：</li>
+<li>核心思想是基于算子 $\Lambda - \Lambda_0$ 的谱分解来表征夹杂物。这依赖于一个特性：一个测试点 $z$ 是否在夹杂物$D$内，取决于一个<b>单点奇异解</b>（例如，一个点源格林函数）是否在 $\Lambda - \Lambda_0$ 的值域内。</li>
+<li><b>在这里，问题发生了根本变化</b>。边界算子 $\mathscr{B}$ 具有<b>非平凡零空间</b>（即常数函数 $\text{span}\{1\}$）。这意味着，当一个奇异解的<b>常数分量</b>（即其平均值）进入系统时，它会被边界算子“吸收”或“消除”（因为 $\mathscr{B}(1)=0$），导致该奇异解无法在DtN映射的数据中有效体现其位置信息。因此，经典的单点采样会失败。</li>
+<li><b>“双点采样”测试的数学原理</b>：</li>
+<li>为了克服零空间问题，作者巧妙地将<b>单点奇异解</b>改为<b>两个点源奇异解的差</b>。设 $\Phi(x, y)$ 是二维拉普拉斯方程的基本解。定义</li>
+</ul>
+<p>$$Q_y(x) = \Phi(x, y)$$</p>
+<p>和</p>
+<p>$$Q_{y, y_0}(x) = \Phi(x, y) - \Phi(x, y_0)$$</p>
+<p>其中 $y_0$ 是<b>一个固定的内部参考点</b>（比如已知在 $D$ 内部或外部的一个点）。</p>
+<ul>
+<li>关键结论在于：判别一个点 $y$ 是否在 $D$ 内，等价于判断<b>双点奇异解</b> $Q_{y, y_0}(x)$ <b>本身</b>（而不是其平均值）是否属于算子 $\Lambda - \Lambda_0$ 的某个值域。</li>
+<li>因为两个单点解相减，抵消了它们的<b>常数分量</b>（其平均值可能为零），从而绕过了$\mathscr{B}$的零空间问题。这使得$Q_{y, y_0}$作为一个整体，其边界响应能够被DtN映射有效记录，从而保留了关于$y$是否在$D$内的关键信息。</li>
+<li><b>如何选择内部参考点</b>：</li>
+<li>论文的理论分析并没有强制规定 $y_0$ 必须在 $D$ 内还是外，只需要其位置已知且固定。实际上，数值实验中选择了一个<b>位于 $D$ 内部</b>的点（例如，椭圆夹杂物的中心）。</li>
+<li>选择内部点可以确保 $Q_{y, y_0}$ 在 $y$ 趋近于 $D$ 边界时的行为是正则的，从而更容易数值实现。如果选择外部点，数学处理会变得更复杂。</li>
+<li><b>化简为“单点采样”算法</b>：</li>
+<li>在实际数值实现时，对于每个测试点 $y$，算法并不需要真的计算两个点源。因为 $y_0$ 是固定的，当我们为所有 $y$ 计算 $Q_{y, y_0}$ 时，$Q_{y_0}$ 是一个固定函数。</li>
+<li>因此，可以通过预计算所有 $y$ 点的单点响应，再减去 $y_0$ 点的单点响应来高效实现，这本质上等同于一个“单点采样加修正”的算法。论文中的<b>定理 4.1</b> （Algorithm 4.1）正是利用这个性质，给出了一个 <b>只需要进行一次单点采样计算</b> 的高效实现。</li>
+</ul>
+<ol>
+<li><b>数值实验的设置与结果</b>：</li>
+</ol>
+<ul>
+<li><b>几何形状</b>：$\Omega$ 是一个单位圆盘，$D$ 是一个<b>椭圆</b>夹杂物（例如，长轴 $\approx 0.75$，短轴 $\approx 0.35$，中心在 $(0.5, 0)$）。$y_0$ 固定在椭圆中心附近。</li>
+<li><b>材料参数</b>：论文假设 $\mu_o = 1$，并设置 $\mu_i = \mu = 0.5$（即夹杂物比主体<b>软</b>，模拟损伤）。界面参数 $\mu_s = 4.0$，$\ell_s = 0.1$。</li>
+<li><b>DtN映射离散化</b>：DON映射 $\Lambda - \Lambda_0$ 被离散化为矩阵。他们假设可以测量<b>20个边界位移模式</b>（$f_i$）和相应的边界力，从而形成一个 $20 \times 20$ 的矩阵。</li>
+<li><b>核心数值结果</b>：</li>
+<li><b>图 4</b>（文中称为Figure 4）显示了重建结果。一个由数值计算得到的<b>指示函数（indicator function）</b> 被用来判别每个采样点 $y$ 是否属于 $D$。这个指示函数在 $D$ 内部应较大，外部应较小（或接近0）。</li>
+<li>结果图显示，指示函数在<b>椭圆夹杂物内部</b>的取值显著高于外部，清晰地勾勒出了夹杂物的<b>边界</b>。这表明该算法<b>成功地重建了D的形状</b>。</li>
+<li>论文还测试了添加 <b>20% 的测量噪声</b>的情况（通过给DtN矩阵添加一个缩放的白噪声矩阵实现），重建质量虽有下降，但夹杂物的基本形状仍然可以被辨识，说明算法对噪声具有一定的<b>鲁棒性</b>。</li>
+<li><b>对界面参数的敏感性</b>：通过测试不同的$\ell_s$值（在0.01到1.0之间），重建算法均表现良好，但对非常小的$\ell_s$（趋近于0的情况），模型退化为Gurtin-Murdoch模型，此时经典因子分解法理论上也适用，但作者未做对比。</li>
+</ul>
+<p><b>APPENDIX_NEEDED: YES</b></p>
+<p>论文引用了附录A（用于“改进因子分解法”的严格数学分析，特别是针对高阶算子和零空间的处理）和附录B（关于DON映射谱分解的引理）。这些附录为算法的理论基石提供了必要的细节，是理解其数学严密性的关键，因此值得阅读。</p>
+<p><b>APPENDIX_NEEDED: YES</b> (附录A和B对于严格理解算法的数学基础是必要的，包含关键的算子分解和谱分析证明。)</p>
+<h2>附录补充</h2>
+<h3>附录 A：主分解定理的证明</h3>
+<p>该附录提供了算子 $(\Lambda - \Lambda_0)$ 谱分解的<b>严格数学证明</b>，以及将其范围（Range）与<b>正则化解</b>相关联的关键定理。</p>
+<p><b>1. 谱分解的构建</b></p>
+<ul>
+<li>通过引入<b>Riesz 同构</b> $J: H^{-1/2}(\partial \Omega) \rightarrow H^{1/2}(\partial \Omega)$，将 $(\Lambda - \Lambda_0)$ 转化为自伴紧算子 $J(\Lambda - \Lambda_0)$。</li>
+<li>证明了 $J(\Lambda - \Lambda_0)$ 的特征系统 $\{\lambda_n; f_n\}_{n \ge 0}$ 具有以下性质：</li>
+<li>$\lambda_0 = 0$，对应特征向量 $f_0 = \text{span}\{1\}$（即<b>零空间</b>）。</li>
+<li>$\{\lambda_n\}_{n \ge 1}$ 单调递减至零，$\{f_n\}_{n \ge 0}$ 构成 $H^{1/2}(\partial \Omega)$ 的规范正交基。</li>
+<li>通过 $J\ell_n = f_n$ 定义了 <b>$H^{-1/2}(\partial \Omega)$ 空间的对偶基</b> $\{\ell_n\}_{n \ge 0}$，并证明了它构成<b>完备规范正交集</b>。这给出了 $(\Lambda - \Lambda_0)$ 的谱分解显式表达式：</li>
+</ul>
+<p>$$(\Lambda - \Lambda_0)f = \sum_{n\ge 1} \lambda_n \langle f , \ell_n \rangle_{\partial \Omega} \, \ell_n$$</p>
+<p>（注意此处求和从 $n=1$ 开始，零空间分量被排除。）</p>
+<p><b>2. Range 表征定理（Theorem 1）</b></p>
+<ul>
+<li>在给定因子分解 $(\Lambda - \Lambda_0) = (PS)^<i> T PS$ 的条件下，给出了一个<b>数值可计算的判据</b>来判断一个边界数据 $\ell$ 是否属于 $(PS)^</i>$ 的值域：</li>
+</ul>
+<p>$$\ell \in \text{Range}((PS)^*) \iff \sum_{n=1}^\infty \frac{1}{\lambda_n} |\langle f_n, \ell \rangle_{\partial \Omega}|^2 < \infty$$</p>
+<p>这个无穷级数收敛性的判断正是<b>因子分解法</b>反演的核心。</p>
+<p><b>3. 正则化解判据（Theorem 2）</b></p>
+<ul>
+<li>由于直接判断级数收敛在数值上不可行，附录证明了<b>另一个等价的、可数值实现的判据</b>，通过正则化解 $f_\alpha$ 来判定：</li>
+</ul>
+<p>$$\ell \in \text{Range}((PS)^*) \iff \liminf_{\alpha \rightarrow 0} \langle f_\alpha , (\Lambda - \Lambda_0)f_\alpha\rangle_{\partial \Omega} < \infty$$</p>
+<p>这里 $f_\alpha$ 是求解 $(\Lambda - \Lambda_0) f = \ell$ 的<b>正则化解</b>（例如 Tikhonov 正则化）。核心推导在于展示了：</p>
+<p>$$\langle f_\alpha , (\Lambda - \Lambda_0)f_\alpha\rangle_{\partial \Omega} = \sum_{n\ge 1} \frac{h_\alpha^2(\lambda_n)}{\lambda_n} |\langle f_n, \ell \rangle_{\partial \Omega}|^2$$</p>
+<p>其中 $h_\alpha$ 是滤波函数。当 $\alpha \rightarrow 0$ 时，$h_\alpha \rightarrow 1$，该值在 $\ell$ 属于特定值域时收敛，否则发散。这为后续的“双点采样”指标函数设计提供了理论依据。</p>
+<p>---</p>
+<h3>附录 B：圆形区域上的核函数推导</h3>
+<p>本附录针对一个特殊几何（$\Omega$ 为单位圆盘，$D$ 为同心圆）给出了DtN算子核函数的<b>解析表达式</b>。这对于数值实验中的校验至关重要。</p>
+<p><b>1. 位移场的级数解</b></p>
+<ul>
+<li>在极坐标 $(r,\theta)$ 下，利用<b>分离变量法</b>将 $\Omega \backslash D$ 和 $D$ 内的调和位移场展开为傅里叶级数：</li>
+<li>环形区域：$u(r,\theta) = a_0 + b_0 \ln r + \sum_{|n|\ge 1} (a_n r^{|n|} + b_n r^{-|n|}) e^{i n \theta}$</li>
+<li>圆盘区域：$u(r,\theta) = c_0 + \sum_{|n|\ge 1} c_n r^{|n|} e^{i n \theta}$</li>
+</ul>
+<p><b>2. DtN 核的傅里叶系数</b></p>
+<ul>
+<li>通过应用边界条件和界面条件（位移连续、力与高阶边界算子平衡），得到一个关于傅里叶系数 $a_n, b_n, c_n$ 的线性方程组。</li>
+<li>定义 $\sigma_n = \tilde{a}_n - \tilde{b}_n$（其中 $\tilde{a}_n = a_n/f_n$, $\tilde{b}_n = b_n/f_n$），最终得到DtN差算子的核函数 $K(\theta, \phi)$ 的傅里叶系数 $\kappa_n$：</li>
+</ul>
+<p>$$K(\theta, \phi) = \sum_{|n| \ge 1} |n| (\sigma_n - 1) e^{i n (\theta - \phi)}$$</p>
+<p>即 $\kappa_0 = 0$，$\kappa_n = |n|(\sigma_n - 1)$。</p>
+<p><b>3. 系数的封闭形式</b></p>
+<ul>
+<li>通过求解线性方程组，得到了 $\kappa_n$ 的<b>解析封闭形式</b>：</li>
+</ul>
+<p>$$\kappa_n = |n| \frac{2 \rho^{2|n|} ( \rho^3(\mu-1)|n| + \rho^2 \mu_s |n|^2 + \mu_s \ell_s^2 |n|^4)}{\rho^3|n|(\mu+1) + \rho^2 \mu_s |n|^2 + \mu_s \ell_s^2 |n|^4 - \rho^{2|n|} (\rho^3(\mu-1)|n| + \rho^2 \mu_s |n|^2 + \mu_s \ell_s^2 |n|^4)}$$</p>
+<p>其中 $\rho$ 是 $D$ 的半径，$\mu$ 是夹杂物的相对剪切模量，$\mu_s$ 和 $\ell_s$ 是界面参数。该公式直接体现了<b>界面参数</b>（$\mu_s, \ell_s$）和<b>夹杂物几何</b>（$\rho$）对边界响应的定量影响。</p>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2509.15171" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2509.15171" target="_blank">PDF</a>
+  </div>
+</div>
+
+<div class="card" id="p3">
+  <div class="card-header">
+    <h3>3. 过冷液体中涨落诱导的动力学交叉的微观理论</h3>
+    <p class="title-en">Microscopic Theory of a Fluctuation-Induced Dynamical Crossover in Supercooled Liquids</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2512.13082" target="_blank">2512.13082</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> Corentin C. L. Laudicina, Liesbeth M. C. Janssen, Grzegorz Szamel
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> cond-mat.soft
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 平均场玻璃转变理论预言了向动力学阻滞态的相变，然而在有限维系统的实验或模拟中并未观察到此类转变。我们通过将临界动力学涨落纳入微观模式耦合框架，解决了这一长期存在的矛盾。研究表明，这些涨落使平均场奇异性变得平缓，并在所有有限密度（或温度）下恢复了遍历性，无需引入活化动力学或促进机制。由此得到的有效理论将序参量描述为具有自感应退火无序的随机过程，该过程在平均场层面上自洽地确定。在β弛豫区间内，该理论简化为随机β弛豫理论，从而统一了超越平均场的模式耦合方法与基于副本的方法。随机β弛豫理论的所有参数均由静态结构确定，因此能够实现无参数预测，将平均场理论推广至有限维度。
+  </div>
+  <div class="card-notes">
+    <p>好的，作为一位资深AI研究员，我正在深度阅读这篇论文。</p>
+<h3>初步总结</h3>
+<ul>
+<li><b>一句话总结</b>：通过将临界动力学涨落纳入模耦合理论，解决了玻璃化转变中平均场理论与有限维度实验/模拟之间的矛盾。</li>
+</ul>
+<ul>
+<li><b>研究背景与动机</b>：</li>
+<li><b>核心问题</b>：<b>玻璃化转变</b>的平均场理论（如<b>Mode-Coupling Theory (MCT)</b>）预测存在一个明确的<b>动力学转变</b>，在此转变点系统会发生<b>动力学停滞</b>。然而，在真实的有限维度（三维）系统实验和模拟中，并没有观察到这种尖锐的相变，而是一个连续、平滑的转变。</li>
+<li><b>已有工作的差异</b>：以往认为，这种差异源于<b>活化动力学</b>或<b>动态促进</b>（facilitation）等非平均场效应。本论文提出，<b>临界涨落</b>（critical dynamical fluctuations）本身，就足以解释这种差异，从而为理解玻璃化转变的普遍机理提供了全新视角。</li>
+</ul>
+<ul>
+<li><b>核心材料/体系</b>：</li>
+<li><b>理论体系</b>：研究的是<b>过冷液体</b>（supercooled liquids）这一普遍体系。论文没有针对特定材料，而是建立了一个普适性的微观理论。</li>
+</ul>
+<ul>
+<li><b>关键物理机理</b>：</li>
+<li><b>核心机制</b>：<b>临界涨落</b>（critical dynamical fluctuations）在平均场临界点附近起主导作用。这些涨落会“抹平”（round off）平均场理论预测的奇异性，从而恢复系统在所有有限密度（或温度）下的<b>各向同性</b>（ergodicity）。这一机制不依赖于活化过程或动态促进。</li>
+<li><b>理论桥梁</b>：该理论将序参量描述为一个具有<b>自诱导退火无序</b>（self-induced, annealed disorder）的随机过程，该无序由平均场水平自洽决定。在<b>β-弛豫</b>（β-relaxation）区域，理论简化为<b>随机β-弛豫理论</b>（stochastic beta-relaxation theory），从而统一了超越平均场的模耦合和基于副本（replica）的方法。</li>
+</ul>
+<ul>
+<li><b>主要表征结果</b>：</li>
+<li><b>理论预测</b>：论文的核心结论是理论性的，它预测了在有限维度下，<b>动力学相关长度</b>和<b>弛豫时间</b>如何随着温度/密度变化。</li>
+<li><b>参数无自由</b>：所有<b>随机β-弛豫理论</b>中的参数都完全由系统的<b>静态结构</b>（static structure，如静态结构因子S(q)）唯一确定。这使得该理论可以做出<b>无自由参数</b>（parameter-free）的预测，从而极大地增强了其预测能力和可验证性。</li>
+</ul>
+<ul>
+<li><b>性能指标</b>：</li>
+<li><b>无</b>：论文为纯理论工作，不涉及具体材料性能指标（如模量、电导率等）。</li>
+</ul>
+<ul>
+<li><b>创新点</b>：</li>
+</ul>
+<ol>
+<li><b>解决长期矛盾</b>：首次在不引入活化或促进机制的情况下，通过涨落本身解释了玻璃化转变平均场理论与实验/模拟的差异。</li>
+<li><b>理论统一</b>：将<b>模耦合理论</b>（MCT）和<b>副本理论</b>（replica theory）等看似不同的理论框架，通过临界涨落在β-弛豫区域统一起来。</li>
+<li><b>参数无自由</b>：所有参数均由静态结构决定，使得理论具有直接的可实验验证性，无需可调参数。</li>
+</ol>
+<ul>
+<li><b>与我研究的相关性</b>：</li>
+<li><b>高度相关</b>：我的研究知识库中“<b>高分子链动力学</b>”、“<b>玻璃化转变（Tg）</b>”以及“<b>表征与计算方法</b>”中的理论方法（如模拟）都与本文高度相关。本文的理论贡献直接关乎对<b>液晶高分子</b>、<b>聚合物 melts</b> 中玻璃化转变和链动力学本质的理解。</li>
+</ul>
+<ul>
+<li><b>局限性</b>：</li>
+<li><b>论文本身明确指出</b>：理论在<b>β-弛豫</b>阶段有效，但描述完整的α-弛豫和最终玻璃化转变可能仍需额外考虑。</li>
+<li><b>微观验证</b>：理论推导基于平均场框架的涨落修正，在真正的有限维度体系中，需要更精细的模拟或实验来验证其所有预测细节。</li>
+<li><b>适用范围</b>：理论可能不适用于强玻璃形成体或存在特殊相互作用的系统。</li>
+</ul>
+<ul>
+<li><b>后续可跟进方向</b></li>
+<li><b>理论层面</b>：将理论扩展到<b>α-弛豫</b>阶段，完整描述最终的玻璃化转变。</li>
+<li><b>计算验证</b>：进行高精度分子动力学模拟，特别是对硬球或简单Lennard-Jones模型，直接测量理论预测的动力学相关长度和弛豫时间随温度/密度的标度行为，并检验其与静态结构的关系。</li>
+<li><b>实验关联</b>：寻找能够通过测量静态结构因子来预测玻璃化转变行为的实验系统。</li>
+</ul>
+<h3>问题集（留给细节Agent）</h3>
+<ol>
+<li><b>具体的涨落处理方式</b>：模型如何具体地引入“临界涨落”？是采用场论中的重整化群方法还是其他形式的微扰理论？其截断方式和关键假设是什么？</li>
+<li><b>序参量定义</b>：理论中描述的“序参量”具体是什么？在模耦合框架下，通常是密度相关函数或非遍历参数。这里是如何定义并写入随机过程的？</li>
+<li><b>自洽条件</b>：“自洽地确定自我诱导退火无序”的具体数学形式是什么？方程是怎样的？</li>
+<li><b>随机β-弛豫理论的具体形式</b>：该理论给出了什么样的随机偏微分方程？与已知的Levy flight或fractional dynamics有何联系？</li>
+<li><b>有限维度的直接预测</b>：论文是否给出了参数不自由情况下，对于特定模型（如硬球）在三维的<b>β-弛豫</b>标度指数（如Rogers-Young或Schilling-Skvor）的定量预测？</li>
+</ol>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2512.13082" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2512.13082" target="_blank">PDF</a>
+  </div>
+</div>
+
+<div class="card" id="p4">
+  <div class="card-header">
+    <h3>4. 增强扩散采样：利用扩散模型高效实现稀有事件采样与自由能计算</h3>
+    <p class="title-en">Enhanced Diffusion Sampling: Efficient Rare Event Sampling and Free Energy Calculation with Diffusion Models</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2602.16634" target="_blank">2602.16634</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> Yu Xie, Ludwig Winkler, Lixin Sun, Sarah Lewis, Adam E. Foster et al.
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> physics.chem-ph
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 罕见事件采样问题长期以来一直是分子动力学（MD）的核心限制因素，尤其是在生物分子模拟中。近年来，诸如BioEmu等扩散模型已成为强大的平衡采样器，能够从复杂分子分布中生成独立样本，从而消除了采样罕见转变事件的开销。然而，在计算依赖于平衡态中罕见状态的可观测量（例如折叠自由能）时，采样问题依然存在。在此，我们引入增强扩散采样，能够在保持无偏热力学估计量的同时，高效探索罕见事件区域。核心思想是执行定量精确的导向协议以生成偏置系综，随后通过精确重加权恢复平衡统计量。我们将该框架实例化为三种算法：UmbrellaDiff（基于扩散模型的伞状采样）、MetaDiff（元动力学的批次类比算法）以及$\Delta$G-Diff（通过倾斜系综计算自由能差）。在玩具系统、蛋白质折叠景观及折叠自由能中，我们的方法实现了快速、准确且可扩展的平衡性质估计，每个系统仅需GPU·分钟至小时——填补了扩散模型平衡采样器出现后仍遗留的罕见事件采样空白。
+  </div>
+  <div class="card-notes">
+    <p>好的，作为资深AI研究员，我已深度阅读您提供的论文主体部分。以下是对这篇《Biasing and unbiasing diffusion model ensembles》的完整阅读笔记，整合了前一阶段的初步总结并深入分析了方法细节与实验结果。</p>
+<p>---</p>
+<h2>第二轮阅读 — 详细分析</h2>
+<h3>阅读笔记</h3>
+<ul>
+<li><b>一句话总结</b>: 提出了一个通用框架，将经典有偏采样+重加权范式无缝集成到扩散模型推理中，系统性地解决了生物分子模拟中的“慢混合”和“罕见状态”两大瓶颈。</li>
+</ul>
+<ul>
+<li><b>研究背景与动机</b>:</li>
+<li><b>核心科学问题</b>: 分子模拟面临两大瓶颈：1) <b>慢混合</b>：时间相关轨迹导致构象空间探索缓慢；2) <b>罕见状态</b>：低概率状态的采样成本随自由能差指数增长。扩散模型（如BioEmu）解决了慢混合（生成近似独立同分布样本），但未能解决罕见状态问题（需要指数级样本）。</li>
+<li><b>与已有工作的差异</b>: 现有工作要么用传统MD+增强采样（受限于慢混合），要么用扩散模型直接采样（受限于罕见状态）。本文首次提出将“增强采样”的思想集成到“扩散模型”框架下，同时攻克两大瓶颈。这区别于早期基于扩散模型的引导方法（如Classifier-Free Guidance）或基于路径积分重加权的方法（如SMC），后者通常不保证对目标有偏密度进行无偏采样，或需要更复杂的序贯重要性采样。</li>
+</ul>
+<ul>
+<li><b>核心材料/体系</b>:</li>
+<li><b>方法论框架</b>: 提出“增强扩散采样”（Enhanced Diffusion Sampling）通用框架，包含三个具体实例：</li>
+</ul>
+<ol>
+<li><b>UmbrellaDiff</b>: 对应经典<b>伞形采样</b>。</li>
+<li><b>MetaDiff</b>: 对应经典<b>元动力学</b>的批处理版本。</li>
+<li><b>ΔG-Diff</b>: 通过<b>倾斜系综</b>直接计算自由能差。</li>
+</ol>
+<ul>
+<li><b>基础模型</b>: 需要预训练的扩散模型（如BioEmu）提供无偏平衡分布 $p(x)$ 的生成能力。</li>
+<li><b>核心机制</b>: 在扩散模型的去噪推理阶段，通过 <b>Feynman-Kac Corrector (FKC)</b> 方法施加已知的偏置势 $b(x)$，生成有偏样本，并使用 <b>WHAM/MBAR</b> 等精确重加权方法恢复无偏平衡统计量。</li>
+<li><b>演示系统</b>: 玩具双势阱系统（概念验证），以及<b>18个来自ProThermDB的蛋白质</b>（50-200个氨基酸）的折叠自由能计算（使用BioEmu）。</li>
+</ul>
+<ul>
+<li><b>关键物理机理</b>:</li>
+<li><b>核心公式与算法</b>:</li>
+<li><b>有偏采样</b>: 通过FKC方法定义了一个受控SDE，在扩散模型的逆向去噪过程中引入偏置势 $b_t(x)$ 的梯度 $\nabla b_t(x)$ 作为控制漂移，从而生成有偏系综 $q(x) \propto p(x) e^{-b(x)}$ 的加权样本。</li>
+</ul>
+<p>$$dx_t = \Big(g_t(x) + \frac{\tilde{\sigma}_t^2}{2}\nabla b_t(x_t)\Big)dt + \tilde{\sigma}_t dW_t$$</p>
+<ul>
+<li><b>重要性权重</b>: 在采样过程中，同时通过一个额外的SDE演化对数重要性权重 $\log w_t$，其漂移项与偏置势的时间导数 $\partial b_t/\partial t$ 和空间梯度 $\nabla b_t$ 有关：</li>
+</ul>
+<p>$$d \log w_t = F_t(x_t)dt - \mathbb{E}_{x\sim q_t} [F_t(x)]$$</p>
+<p>其中 $F_t(x) := -\frac{\partial b_t(x)}{\partial t} + \nabla b_t(x) \cdot \left(f_t(x) - \frac{\sigma_t^2}{2}\nabla \log p_t(x)\right)$。</p>
+<ul>
+<li><b>重加权 (Reweighting)</b>: 对于单一偏置势，使用直接重加权 $W_n = w_n e^{b(x_n)}$。对于多个偏置势（如UmbrellaDiff的多个窗口），使用<b>加权MBAR</b>，引入每个样本的有效质量 $\alpha_{k,i} \propto w_{k,i}$，并求解自洽方程得到最优无偏权重。</li>
+<li><b>关键洞察</b>:</li>
+</ul>
+<ol>
+<li><b>双重瓶颈的解耦与解决</b>: 扩散模型（独立同分布采样）解决了“慢混合”；增强采样（有偏采样+重加权）解决了“罕见状态”。两者结合，效率远胜传统MD或纯扩散模型。</li>
+<li><b>从“动力学”到“统计学”的转变</b>: 在扩散模型框架下，增强采样不再受限于动力学陷阱。例如，UmbrellaDiff中的每个窗口不需要通过缓慢的动力学相互连接，窗口间的重叠要求纯粹是统计性的（由MBAR诊断），正交方向上的隐藏势垒不会导致窗口内的动力学停滞。</li>
+<li><b>元动力学的“批处理”与“平衡态”重定义</b>: MetaDiff将元动力学转变为一系列平衡态有偏系综的序列。每次偏置更新定义了一个确定的热力学状态，可以直接使用MBAR进行在线重加权和诊断，无需等待整个自由能面被“填满”。</li>
+</ol>
+<ul>
+<li><b>主要表征结果</b>:</li>
+<li><b>玩具系统 (图1)</b>: 在双势阱系统中，增强扩散采样的收敛所需的样本量随自由能差 $\Delta G$ 的增长非常缓慢（10到100个样本），而无偏采样的样本量则呈现指数级增长，验证了方法的核心优势。</li>
+<li><b>UmbrellaDiff (图2, PMF计算)</b>: 在具有正交隐藏势垒的二维势能面上，传统伞形采样因动力学陷阱给出了错误的PMF，而UmbrellaDiff则能精确恢复正确的PMF，证明了其对正交方向自由度处理的鲁棒性。</li>
+<li><b>MetaDiff (图3, 双势阱)</b>: 在 $\Delta G = -13.8 k_BT$ 的一维双势阱中，无偏采样完全无法采样到高能态。MetaDiff仅通过两个批次的采样（约35,000个样本）就成功探索了低能态和高能态，并给出了准确的自由能差估计。</li>
+<li><b>ΔG-Diff (图4, 蛋白质折叠)</b>:</li>
+<li><b>准确性 (图4b)</b>: 对18个蛋白质，使用约1,000个增强采样样本得到的折叠自由能 $\Delta G_{\text{fold}}$ 与使用大量无偏样本收敛的参考值高度一致，验证了方法的准确性。</li>
+<li><b>采样效率 (图4c)</b>: 无偏采样的收敛所需样本数量随 $\Delta G_{\text{fold}}$ 指数增长（灰色点），而增强采样（ΔG-Diff）的样本需求增长非常缓慢（蓝色点），展示了巨大的效率提升。</li>
+<li><b>失败案例</b>: 8个蛋白质因偏置势产生的样本与无偏模型重叠不足（如RMSD范围过广）或参考值未收敛而被排除在外，凸显了合理设计偏置和进行诊断的重要性。</li>
+</ul>
+<ul>
+<li><b>性能指标</b>:</li>
+<li><b>计算效率 (蛋白质折叠)</b>:</li>
+<li>采样时间：在<b>GPU分钟到小时</b>量级（对于 $\Delta G_{\text{fold}}$ 最高约6 kcal/mol的蛋白质）。</li>
+<li>样本量：从无偏采样的数千到数百万样本，降低到增强采样的<b>数百到数千</b>样本。</li>
+<li><b>适用规模</b>: 蛋白质尺寸：<b>50 - 200个氨基酸</b>。</li>
+<li><b>可处理的自由能差</b>: 在展示案例中，成功处理了 <b>$\Delta G_{\text{fold}}$ 从1到6 kcal/mol</b> 的蛋白质，理论框架可处理更大值。</li>
+<li><b>收敛定义</b>: 自参考平均绝对误差（MAE）< 1 kcal/mol。</li>
+</ul>
+<ul>
+<li><b>创新点</b>:</li>
+</ul>
+<ol>
+<li><b>通用方法论框架</b>: 首次系统性地提出并验证了将“有偏采样+精确重加权”这一经典增强采样范式无缝集成到扩散模型推理阶段的通用方法论，而非针对某一具体算法的改进。</li>
+<li><b>解决双重瓶颈的联合方案</b>: 明确指出并利用扩散模型（解决慢混合）+ 增强采样（解决罕见事件）的互补优势，提供了从根本上提升采样效率的解决方案。</li>
+<li><b>实用的算法实例与诊断工具</b>: 提供了UmbrellaDiff, MetaDiff, ΔG-Diff三个具体算法，并强调了ESS、重叠矩阵、MBAR误差分析等关键诊断工具在扩散模型语境下的应用，使得框架具备高度可落地性。</li>
+</ol>
+<ul>
+<li><b>与我研究的相关性</b>:</li>
+<li><b>相关性判断</b>: <b>高度相关</b>。</li>
+<li><b>匹配方向</b>:</li>
+</ul>
+<ol>
+<li><b>分子模拟与方法开发</b>: 本研究直接针对分子模拟的核心痛点采样效率，提出开创性思路，与“分子动力学”、“增强采样”、“自由能计算”等方向紧密匹配。</li>
+<li><b>机器学习和AI for Science</b>: 将扩散模型这一前沿深度学习技术创造性地应用于解决经典物理问题，是<b>AI驱动科学发现</b>的典型案例。</li>
+<li><b>计算生物物理</b>: 直接涉及蛋白质折叠、结合等生物物理核心问题。</li>
+</ol>
+<ul>
+<li><b>局限性</b>:</li>
+</ul>
+<ol>
+<li><b>对基础扩散模型的依赖</b>: 整个框架的有效性高度依赖于底层扩散模型（如BioEmu）的准确性。模型的任何偏差（如对高能态多样性建模不佳）都会被传播到重加权结果中。</li>
+<li><b>权重退化风险与偏置设计</b>: 偏置势过强会导致有偏分布与无偏分布重叠不足，产生极端重要性权重和低ESS。权重退化是限制因子，需要谨慎设计偏置（如合适的刚度、窗口间距、倾斜强度）并进行ESS等诊断。</li>
+<li><b>集体变量（CV）选择</b>: 增强采样方法（特别是UmbrellaDiff和MetaDiff）高度依赖于良好集体变量的定义。尽管扩散模型能更好地处理未被CV控制的自由度，但CV选择不当仍会影响效率和准确性。</li>
+<li><b>计算成本</b>: 尽管效率提升巨大，但FKC方法需要使用SDE求解器（比ODE更慢），且仍需要一定的GPU小时数，这对于高通量场景仍是开销。</li>
+<li><b>平衡态性质</b>: 该方法聚焦于<b>平衡态</b>自由能和统计量的计算。如何扩展到非平衡动力学（如折叠路径）是一个开放问题。</li>
+</ol>
+<ul>
+<li><b>后续可跟进方向</b>:</li>
+</ul>
+<ol>
+<li><b>自适应偏置设计</b>: 开发能够自动学习和优化偏置势（如CV空间中的自适应窗口位置和刚度）的算法，减少人工干预。</li>
+<li><b>动力学性质</b>: 探索如何将类似的思想应用于非平衡性质（如过渡路径、速率常数）的模拟，例如通过路径重加权或生成动力学模型。</li>
+<li><b>更复杂的生物系统</b>: 将方法应用于更具挑战性的系统，如蛋白质-配体结合、多肽聚集、含显式溶剂的大生物系统，测试其鲁棒性。</li>
+<li><b>模型幻觉的修正</b>: 研究当基础扩散模型存在系统性偏差时，重加权程序能否部分或完全修正这种偏差，或是如何设计训练过程来减少这种偏差。</li>
+<li><b>与其他AI方法的结合</b>: 将本框架与AI驱动的CV学习、自适应采样策略（如基于SMC的采样）相结合，构建更强大、更自动化的模拟工具。</li>
+</ol>
+<p>---</p>
+<h3>第一轮问题的回答</h3>
+<ol>
+<li><b><code>引导</code>算子细节</b>: 引导通过修改去噪过程的SDE实现。具体是使用FKC方法，在逆向SDE中添加一个与偏置势梯度 $\nabla b_t(x)$ 成正比的<b>控制漂移项</b>。这不像Classifier-Free Guidance那样修改分数函数，也不是简单的似然比方法，而是直接改变粒子在去噪路径上的确定性演化，并通过重要性权重来保证最终样本密度目标正确。</li>
+<li><b>低方差估计量</b>: 论文主要通过<b>加权MBAR</b>来实现低方差估计。加权MBAR通过引入每个样本的 <code>有效质量</code> $\alpha_{k,i}$（正比于其重要性权重 $w_{k,i}$），自动对ESS低的窗口（即权重退化严重的窗口）进行降权处理。这提供了一种统计上最优的方法来组合来自不同偏置势（且各有不同权重质量）的样本，从而最小化最终估计的方差。此外，<b>定期重采样</b>也是控制权重退化的关键技巧。</li>
+<li><b>重加权效率</b>: 对于UmbrellaDiff，需要的独立去噪轨迹数量不能一概而论。图2中的2D势能问题可能只需要8个窗口，每个窗口几十到几百个样本。对于复杂的蛋白质体系（200个氨基酸），论文中ΔG-Diff的演示使用了 <b>25,000个</b> 总体本量（从不同倾斜强度的批次中获得）。收敛需要 <b>数百到数千个</b> 有效样本（由ESS衡量）。</li>
+<li><b>与现有方法的对比细节</b>:</li>
+</ol>
+<ul>
+<li><b>UmbrellaDiff vs. Richman & Dror 的 <code>推理引导</code></b>: 推理引导通过修改分数的方式直接对扩散模型施加约束，通常不保证对目标有偏密度进行精确采样。UmbrellaDiff采用FKC方法，通过重要性权重提供了一条<b>精确</b>路径来从无偏分布 <code>p(x)</code> 生成有偏分布的样本，并可结合MBAR得到<b>无偏</b>估计。它更精确但计算成本更高。</li>
+<li><b>MetaDiff的 <code>批处理类比</code></b>: 传统元动力学每个MD步（或每隔几步）添加一个小的偏置高斯核（hill）。MetaDiff则是<b>从当前偏置下的扩散模型中生成一个批次的独立同分布样本</b>，然后<b>将一个批次中所有样本对应的偏置核一次性添加到偏置势中</b>。这相当于将元动力学的“时间”离散化为“外循环迭代”，每个迭代的“动力学”进步由一批独立的扩散模型推理完成，避免了MD的慢混合问题。</li>
+</ul>
+<ol>
+<li><b>代码与模型的可复现性</b>: 论文基于开源代码实现，使用了开源的BioEmu v1.1模型。虽然没有明确给出论文方法所有实现细节的仓库，但作者遵循了开源精神，有高度可复现的潜力。</li>
+<li><b>基态模型的局限性</b>: <b>不能</b>完全修正由基础模型不准确而导致的错误分布。重加权程序只能解决“因偏置势阻碍未被探索”而导致的稀缺（即采样稀疏），但它不能纠正“因模型生成的概率密度本身是错误”而导致的分布偏差。如果基础扩散模型无法生成某些未折叠状态的正确构象，那么即使增强采样能强迫模型走向这些状态，得到的构象也可能是错误的（即“模型幻觉”），重加权无法挽救。</li>
+</ol>
+<p>---</p>
+<h3>是否需要阅读附录</h3>
+<p>APPENDIX_NEEDED: YES</p>
+<p><b>原因</b>: 论文主体部分对FKC方法、加权MBAR以及三个具体算法（UmbrellaDiff, MetaDiff, ΔG-Diff）的描述已经相当详细，包括核心公式和算法步骤。然而，一些关键的性能数据（如玩具系统中的样本效率具体数值）、更详细的蛋白质基准测试结果（包括排除的8个具体蛋白质列表）以及对元动力学平均场极限的更严格数学推导，通常会在附录中提供。此外，关于SDE/ODE积分器的具体设置和超参数（如步长、校正次数）也可能在附录中有更完整的呈现。附录将提供对方法鲁棒性和实现细节更深入的理解。</p>
+<h2>附录补充</h2>
+<ul>
+<li><b>倾斜势具体形式</b>：采用夹持线性函数（clamped linear）\( V = s \cdot \mathrm{clamp}(\mathrm{CV}, c_\mathrm{min}, c_\mathrm{max}) \)，其中斜率 \(s\) 为每个系统估计的最优值，\(c_\mathrm{min}, c_\mathrm{max}\) 为裁剪边界防止势能发散。</li>
+<li><b>样本分批与子采样策略</b>：每个运行内，生成少量独立批次（批次大小依赖蛋白尺寸）。收敛分析时，从合并池中随机无放回抽取批次子集，每个样本量重复200次以获得统计。注意子采样在批次级别进行（不同批次独立），而非批次内部（同一批次样本已通过倾斜算法重采样）。</li>
+<li><b>两状态模型</b>：折叠自由能通过天然接触分数（FNC）使用两状态模型估计，并采用逆玻尔兹曼重加权（inverse Boltzmann reweighting）校正倾斜偏差。</li>
+<li><b>排除的8个蛋白质具体PDB ID</b>：5个因RMSD范围超过2nm（1QLP, 1CEC, 2LZM, 1RHD, 1RIL）；3个因无偏参考ΔG不可靠（1HK0, 1IOB, 1Y9O）。剩余18个的ΔG绝对值范围：1.1–5.7 kcal/mol。</li>
+<li><b>突现失败率</b>：图S1显示，对于每个系统，倾斜采样在中等样本量下突现失败率（随机抽取n个粒子中无未折叠样本的概率）降至零，而无偏采样在稳定蛋白上需要数量级更多的粒子。</li>
+<li><b>MAE收敛曲线</b>：图S2显示，倾斜采样在约100–1000样本时达到亚kcal/mol精度（取决于稳定性）。与无偏采样的交叉点在ΔG≈3.2 kcal/mol，且随着ΔG增大优势更加显著。</li>
+</ul>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2602.16634" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2602.16634" target="_blank">PDF</a>
+  </div>
+</div>
+
+<div class="card" id="p5">
+  <div class="card-header">
+    <h3>5. 经典力场对蛋白质中金属配位模式的局限性：整合素$\alpha_V\beta_3$中Ca$^{2+}$的多层次研究</h3>
+    <p class="title-en">Limitations of Classical Force Fields for Metal Coordination Modes in Proteins: A Multilevel Study of Ca$^{2+}$ in Integrin $\alpha_V\beta_3$</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2606.28463" target="_blank">2606.28463</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> Levy Andrea, Frigerio Giulia, Grollier Jules, Siani Paulo, Di Valentin Cristiana et al.
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> physics.chem-ph
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 标准生物分子力场在模拟金属配位模式时常常存在局限性。本文结合经典力学与QM/MM分子动力学模拟，研究了Ca²⁺介导的cRGD与整合素α_Vβ_3的结合。结果表明，固定点电荷力场在再现非对称结合模式方面存在固有局限，并凸显了基于QM的多层级方法在评估力场模型的正确性与准确性、以及捕捉复杂生物分子系统中金属配位模式方面的价值。
+  </div>
+  <div class="card-notes">
+    <h3>一句话总结</h3>
+<p>该论文通过经典与 QM/MM 分子动力学模拟，揭示了固定点电荷力场在描述蛋白质中 Ca²⁺ 金属配位模式时的固有局限性，并展示了基于 QM 的多层次方法的改进价值。</p>
+<h3>研究问题</h3>
+<p>标准生物分子力场（如固定点电荷力场）在模拟蛋白质中金属离子（如 Ca²⁺）的配位模式时存在哪些不足？如何准确捕捉不对称的金属配位几何？</p>
+<h3>核心方法</h3>
+<p>结合经典分子动力学（FF-MD）和 QM/MM 分子动力学模拟，以整合素 αVβ3 中 Ca²⁺ 介导的 cRGD 结合为模型体系进行多层次研究，对比两种方法在配位模式上的表现。</p>
+<h3>主要结果</h3>
+<p>固定点电荷力场无法正确再现 Ca²⁺ 的不对称配位结合模式，而基于 QM/MM 的多层次方法能够更准确地描述金属配位几何，验证了 QM 方法在评估力场正确性和准确性中的关键作用。</p>
+<h3>潜在价值</h3>
+<p>为改进生物分子力场中金属离子参数的开发提供了理论依据，推动了多尺度模拟方法（如 QM/MM）在复杂生物体系（如金属蛋白）中的应用，有助于更准确地研究金属介导的蛋白质功能与相互作用。</p>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2606.28463" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2606.28463" target="_blank">PDF</a>
+  </div>
+</div>
+
+<div class="card" id="p6">
+  <div class="card-header">
+    <h3>6. 非马尔可夫系统中通过能量回收的超快定向输运</h3>
+    <p class="title-en">Ultrafast directed transport via energy recuperation in non-Markovian systems</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2606.28567" target="_blank">2606.28567</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> Mateusz WI\'sniewski, Jakub Spiechowicz
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> cond-mat.soft
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 近期一项开创性实验[Nat. Commun. 16, 10114 (2025)]表明，浸没于黏弹性流体谐振势阱中的过阻尼驱动胶体粒子能够回收耗散到周围浴中的能量并将其转化为有用功。本文对原始预测进行了显著扩展。特别地，我们证明能量回收是非平衡态与平衡态非马尔可夫系统的普遍特征，即便简单如自由布朗粒子亦不例外。此外，我们证明即便在强阻尼区间，即便没有外部驱动力，仅惯性本身即可导致该效应。这些结果表明能量回收在自然界中可能普遍存在，并可能是具有记忆效应的装置中多种现象的运行机制。我们展示该新型能量回收机制是周期势中粒子发生记忆诱导超快定向输运的根源——在此过程中粒子速度几乎达到无势垒系统对应的极限速度。我们的结果可能从基础视角回答生物细胞内胞质溶胶何以具有黏弹性的问题。
+  </div>
+  <div class="card-notes">
+    <h1>论文快速阅读笔记</h1>
+<h2>一句话总结</h2>
+<p>本文通过理论分析表明，能量回收是非马尔可夫系统的普遍特征，并揭示了该机制可实现周期性势场中粒子的超快定向输运。</p>
+<h2>研究问题</h2>
+<ul>
+<li>能量回收（从耗散能量中回收有用功）现象是否仅存在于特定实验条件，还是非马尔可夫系统的普遍特征？</li>
+<li>能量回收能否驱动超快定向输运？其物理机制是什么？</li>
+</ul>
+<h2>核心方法</h2>
+<ul>
+<li>基于非马尔可夫动力学理论，分析不同系统（自由布朗粒子、受驱过阻尼粒子）中的能量回收行为。</li>
+<li>考虑记忆效应和惯性效应，研究能量回收对粒子输运速度的影响，并与无能垒系统的极限速度对比。</li>
+</ul>
+<h2>主要结果</h2>
+<ul>
+<li>能量回收是非马尔可夫系统的通用特征，既存在于平衡态也存在于非平衡态，甚至对自由布朗粒子也成立。</li>
+<li>即使在强阻尼条件下，仅靠惯性（无需外部驱动力）即可引发能量回收。</li>
+<li>该机制导致周期性势场中粒子实现近乎无势垒的极限超快定向运动。</li>
+<li>可能从根本解释细胞胞质（细胞内液）为何具有黏弹性。</li>
+</ul>
+<h2>潜在价值</h2>
+<ul>
+<li>揭示了记忆耗散系统中能量转化的新视角，对理解生物细胞内输运、微尺度操控等具有启发意义。</li>
+<li>为设计无需持续外部驱动的超快定向输运系统提供理论基础。</li>
+</ul>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2606.28567" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2606.28567" target="_blank">PDF</a>
+  </div>
+</div>
+
+<div class="card" id="p7">
+  <div class="card-header">
+    <h3>7. 二元活性手性系统中的相位时间晶体与配对</h3>
+    <p class="title-en">Phase Time Crystals and Pairing in Binary Active Chiral Systems</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2606.28653" target="_blank">2606.28653</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> C. Reichhardt, C. J. O. Reichhardt
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> cond-mat.soft
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 我们引入一类称为相时间晶体的动态系统，该系统由具有中等或长程排斥相互作用的二元粒子组装体构成，受均匀手性的圆周驱动作用，其中每种粒子种类彼此相位相差180度。根据粒子密度和轨道半径，该系统可组织成丰富多样的动态晶体态，包括一种异相粒子形成束缚对并组装成三角晶格的态。我们还发现了条纹相、重叠密堆积晶体、无扩散的无序或相玻璃态、混合流体以及不同类型的相分离态。我们证明了这些态对热涨落的加入具有鲁棒性，并且配对晶体可熔化形成配对流体。若每种粒子种类的驱动具有相反手性，系统会形成条纹相和密堆积晶格，但不会出现配对晶体。通过改变手性驱动的性质，我们展示了实现多种活性分子晶格的可能性，包括动态方形自旋冰几何结构及更高阶的复杂结构。
+  </div>
+  <div class="card-notes">
+    <h1>阅读笔记</h1>
+<h2>一句话总结</h2>
+<p>本文在二元活性手性粒子系统中引入了一种名为“相位时间晶体”的动态系统，并揭示了其丰富的动态晶态（包括配对三角晶格）及其对热扰动的鲁棒性。</p>
+<h2>研究问题</h2>
+<p>如何通过控制二元活性手性粒子（具有反相圆周驱动）的密度和轨道半径，构建出稳定且可调控的动态有序晶态（如相位时间晶体和配对晶格），并探索其相行为。</p>
+<h2>核心方法</h2>
+<ul>
+<li><b>系统设计</b>：构建由两种粒子组成的二元活性系统，粒子间具有中程或长程排斥相互作用，并施加均匀手性（同一旋向）圆周驱动，两种粒子驱动相位相差180°。</li>
+<li><b>参数扫描</b>：通过改变粒子密度和轨道半径，观察系统自组织形成的各种动态晶态。</li>
+<li><b>热扰动测试</b>：引入热涨落检验各态的稳定性。</li>
+<li><b>手性反转实验</b>：将两种粒子的驱动旋向设为相反，探究其对配对晶格形成的影响。</li>
+</ul>
+<h2>主要结果</h2>
+<ul>
+<li>发现多种动态晶态：配对三角晶格、条纹相、重叠致密晶态、无序相（相位玻璃态，无扩散）、混合流体及相分离态。</li>
+<li>配对晶格在热涨落下仍能保持完整，并可熔化为配对流体。</li>
+<li>当驱动旋向相反时，系统只形成条纹和致密晶格，无法形成配对晶格。</li>
+<li>通过调整手性驱动性质，可进一步实现动态方自旋冰几何及更高阶复杂结构（活性分子晶格）。</li>
+</ul>
+<h2>潜在价值</h2>
+<ul>
+<li>提出“相位时间晶体”新概念，拓展了非平衡态统计物理和活性物质领域中对动态有序相的理解。</li>
+<li>为设计可调控的活性分子晶格、拓扑有序结构及新型功能材料（如动态光学超表面、微机器人集群）提供了理论依据。</li>
+<li>展示了如何利用手性驱动和相位差实现丰富相行为，对研究主动物质中的配对、结晶和玻璃化转变具有启发意义。</li>
+</ul>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2606.28653" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2606.28653" target="_blank">PDF</a>
+  </div>
+</div>
+
+<div class="card" id="p8">
+  <div class="card-header">
+    <h3>8. 反应网络的集总：通用参数与关键参数</h3>
+    <p class="title-en">Lumping of reaction networks: Generic and critical parameters</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2606.28895" target="_blank">2606.28895</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> Justin Eilertsen, Valery G. Romanovski, Santiago Schnell, Sebastian Walcher
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> physics.chem-ph
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 我们研究了参数依赖性质量作用反应网络的线性集总，区分了一般参数与临界参数区间。对于一般参数（即参数空间某个非空开子集中的参数），我们证明精确线性集总仅产生“显而易见的”简化：消除非反应物物种或沿化学计量首次积分的投影。该结论可推广至具有乘积形式动力学的反应网络，包括米氏-门滕和希尔型速率定律。针对质量作用系统，我们进一步开发了识别临界参数集的算法方法——即参数空间中可进行非平凡集总的代数子簇。该过程将集总映射的确定简化为有限多个多项式方程组成的系统，同样适用于常由化学考量驱动的受限集总场景。随后我们回顾并拓展了关于适当集总的研究结果。最后讨论自复制系统及双通路酶机制的集总案例，验证了方法在相关场景中的可行性。研究结果厘清了结构（参数无关）简化与精细调谐（参数依赖）简化之间的关系，对系统参数接近临界值时的近似集总具有指导意义。
+  </div>
+  <div class="card-notes">
+    <p>好的，作为一名资深AI研究员，我将基于您提供的论文核心部分（包括方法、分析等），结合第一轮的初步总结，为您生成一份完整、深入的阅读笔记。</p>
+<p>---</p>
+<h3>阅读笔记: 化学反应网络的线性聚合降阶：通用性与临界性</h3>
+<ul>
+<li><b>一句话总结</b>: 揭示了在通用参数下，化学反应网络的精确线性降阶仅限于平凡情况，而非平凡降阶仅存在于参数空间测度为零的“临界”子集中。</li>
+</ul>
+<ul>
+<li><b>研究背景与动机</b>:</li>
+<li><b>核心问题</b>: 化学反应网络（CRNs）的动力学模型（例如，由质量作用定律导出的常微分方程）通常具有高维度和大量参数，导致计算和分析困难。<b>模型降阶</b>方法，特别是<b>线性聚合</b>（linear lumping），旨在将高维变量（物种浓度）线性组合成少数几个宏观变量，从而简化模型。然而，现有方法要么是<b>结构性的</b>（parameter-independent，即不依赖具体参数值，如CLUE算法），要么是针对<b>固定参数值</b>的（如经典的Wei-Kuo理论）。一个关键的科学问题是：<b>参数的变化如何影响线性聚合降阶的可行性与形式？</b> 本文填补了这两者之间的空白。</li>
+<li><b>与已有工作的差异</b>:</li>
+</ul>
+<ol>
+<li><b>超越Wei-Kuo经典理论</b>：Wei-Kuo理论主要针对<b>固定参数值</b>下的线性系统。本文将其扩展到非线性系统，并首次系统地研究了<b>参数依赖性</b>。</li>
+<li><b>超越结构性降阶算法（CLUE等）</b>：结构性算法寻找对所有参数值都成立的降阶，但它们找到的往往是“平凡”的降阶。本文解释了为什么这些算法经常找不到更好的结果，并指出非平凡降阶的出现需要参数间存在特殊关系。</li>
+<li><b>引入临界参数概念</b>：本文的核心贡献是严格区分了<b>通用参数</b>（generic parameters，其所在的开子集）和<b>临界参数</b>（critical parameters，位于参数空间的低维代数子簇上），并给出了系统性的代数方法去寻找后者。</li>
+</ol>
+<ul>
+<li><b>核心材料/体系</b>:</li>
+<li><b>数学框架</b>：参数依赖的多项式常微分方程组 $\dot{x} = F(x, k)$，其中 $x \in \mathbb{R}^n$ 为物种浓度向量，$k \in \mathbb{R}^d_+$ 为速率常数参数向量。</li>
+<li><b>研究对象</b>：</li>
+<li><b>质量作用动力学</b>网络（Mass-action kinetics）。</li>
+<li><b>乘积形式动力学</b>（Product-form kinetics），包含Michaelis-Menten和Hill型速率。</li>
+<li><b>核心工具</b>：</li>
+<li><b>线性代数</b>：不变子空间理论（Invariant subspaces）。</li>
+<li><b>代数几何</b>：代数簇（Algebraic varieties）、Gröbner基。</li>
+<li><b>多项式系统求解</b>。</li>
+</ul>
+<ul>
+<li><b>关键物理机理</b>:</li>
+</ul>
+<ol>
+<li><b>通用参数下的平凡降阶</b>：</li>
+</ol>
+<ul>
+<li>对于“通用”的（即参数处于一个开稠密集）质量作用网络，任何线性聚合映射 $T$ 只能产生两种平凡结果：</li>
+<li><b>类型1</b>：直接删除非反应物种（non-reactant species）。这等价于仅保留真正参与反应的物种浓度。</li>
+<li><b>类型2</b>：利用<b>化学计量首次积分</b>（stoichiometric first integrals），即守恒律。将系统投影到由这些守恒律所定义的更低维的线性子空间上。</li>
+<li><b>核心定理</b>：对于通用参数，不可能找到非平凡的（即非上述两种）线性聚合映射。这解释了为什么CLUE等算法在许多模型上找不到更优的降阶。</li>
+</ul>
+<ol>
+<li><b>临界参数下的非平凡降阶</b>：</li>
+</ol>
+<ul>
+<li>当参数位于参数空间的<b>代数子簇</b>（algebraic subvariety）上时，系统的<b>雅可比矩阵</b> $DF(x, k^*)$ 会具有额外的<b>联合不变子空间</b>（joint invariant subspaces）。</li>
+<li>这些额外的不变子空间对应于系统中“<b>隐藏的守恒律</b>”（hidden conservation laws）或更精细的动力学结构。例如，当不同反应的速率常数满足特定比例或等式关系时，系统动力学可能被限制在一个更低维的流形上。</li>
+<li><b>核心判据（Li-Rabitz准则，见Proposition 1）</b>：线性映射 $T$ 实现精确聚合的充要条件是 $\ker(T)$ 对于所有 $x$ 下的雅可比矩阵 $DF(x, k^<i>)$ 都是<b>不变子空间</b>。即 $DF(x, k^</i>) \text{ker}(T) \subseteq \text{ker}(T)$ 对所有 $x$ 成立。本文的核心工作是将此条件转化为关于参数 $k$ 和 $T$ 系数的多项式方程组。</li>
+</ul>
+<ul>
+<li><b>主要表征结果</b>:</li>
+<li><b>单反应分析 (Proposition 3)</b>：对于单个质量作用反应，雅可比矩阵的不变子空间只有两种类型：类型1（张成于非反应物种坐标）和类型2（包含反应向量 $v$）。</li>
+<li><b>网络分析</b>：</li>
+<li><b>通用网络 (Proposition 4, Corollary 2)</b>：若 $T$ 是通用网络的聚合映射，则其对每个单反应都必须是类型1或类型2的映射。这导致了上述的平凡降阶。</li>
+<li><b>算法（Figure 3）</b>：提供了一个构造最小秩通用聚合映射的算法。该算法从一个“种子”物种集出发，根据反应关系递归地添加必须保留的物种，最终得到所有需要保留的浓度分量。</li>
+<li><b>临界参数分析</b>：</li>
+<li><b>代数化 (Lemma 3, Proposition 7)</b>：将寻找临界参数和聚合映射的问题，转化为求解一组有限的多项式方程组。$T$ 的系数和临界参数 $k^*$ 共同满足这些方程。</li>
+<li><b>行简化阶梯形 (Row echelon form, Remark 7)</b>：通过将 $T$ 化为行简化阶梯形（并假设前 $e$ 列线性独立），可以参数化表示 $\ker(T)$ 的基 $B$，从而简化求解过程。</li>
+<li><b>几何解释</b>：临界参数集是参数空间中的<b>代数子簇</b>。其<b>余维数（codimension）</b> 衡量了参数调谐的“精细程度”，余维数越低（如1），在实验或自然中出现的可能性越大。</li>
+<li><b>示例分析</b>：</li>
+<li><b>三物种一级反应网络（Example 6.1）</b>：展示了如何通过设置 $T$ 的参数（如 $t_1, t_2$）和求解线性系统得到参数条件（如 $k_{-2} = k_1$），从而获得非平凡的聚合映射 $Tx = \begin{pmatrix} x_1+x_3 \\ x_2 \end{pmatrix}$。</li>
+<li><b>可逆Michaelis-Menten系统（Example 6.2）</b>：展示了寻找一维降阶（即一个首次积分）的过程。最终发现，要实现非平凡的降阶（且要求所有反应活跃），必须满足 $T$ 的两个参数条件，这对应于一个化学计量首次积分。这再次印证了通用参数下降阶的局限性。</li>
+</ul>
+<ul>
+<li><b>性能指标</b>:</li>
+<li><b>理论性指标</b>：本文的核心“性能”是<b>降阶后的系统维数 $m$</b> 和<b>降阶的精确性</b>。理论上，通用参数下只能实现 $m \geq n - (\text{非反应物种数}) - (\text{独立守恒律数})$ 的降维。</li>
+<li><b>覆盖范围</b>：CLUE算法在BioModels数据库的64%以上模型中都找到了精确降阶，但本文指出这些极有可能是“结构性”的平凡降阶（类型1或2）。<b>临界参数分析</b>的目标是发现剩余36%模型中的、以及当前模型中被忽视的、更精细的降阶机会。</li>
+<li><b>算法复杂度</b>：文中提出的算法虽然系统，但对于大型网络，求解多项式方程组面临着著名的<b>计算可行性问题</b>（组合爆炸）。</li>
+</ul>
+<ul>
+<li><b>创新点</b>:</li>
+</ul>
+<ol>
+<li><b>严谨定义“通用vs.临界”</b>：首次用严格的数学语言划分了通用参数（导致平凡降阶）和临界参数（允许非平凡降阶）的界限，为模型降阶研究提供了一个全新的理论视角。</li>
+<li><b>代数化降阶问题</b>：将寻找参数依赖的非线性（此处为线性）降阶映射，转化为求解有限个由<b>参数</b>和<b>映射系数</b>构成的多项式方程组。这为开发基于代数几何的自动化降阶算法提供了坚实的数学基础。</li>
+<li><b>“隐藏”守恒律的揭示</b>：指出在临界参数值下，系统可能展现出超出常规化学计量守恒律的额外首次积分。这可以解释为一种<b>精细调谐下的结构</b>，对理解系统在某些特殊条件下的动力学行为有重要启发。</li>
+</ol>
+<ul>
+<li><b>与我研究的相关性</b>:</li>
+<li><b>不直接匹配</b>：这篇论文的核心议题是<b>化学反应网络的数学降阶理论</b>，属于系统生物学和数学领域。与您知识库中的<b>高分子物理</b>（如链动力学、粘弹性、相分离、玻璃化转变等）在具体研究对象上几乎没有直接关联。</li>
+<li><b>潜在间接联系</b>：本文的<b>思想和方法</b>具有很强的启发性。在高分子物理研究中，尤其是在模拟复杂体系（如多组分共混物、分级结构聚合物、交联网络）的动力学时，常常需要求解大型常微分方程组或偏微分方程组。本文的“<b>线性聚合</b>”思想提供了一种<b>自上而下、基于代数约束</b>的降阶思路。例如：</li>
+<li><b>简化的高分子动力学模型</b>：某些高分子动力学的粗粒化模型（如模式耦合理论MCT）可能包含大量模式，这些模式之间可能存在由精细调谐的相互作用参数导致的“隐藏”对称性或耦合关系，从而降低系统的有效自由度。本文的代数方法或可用于自动发现这些关系。</li>
+<li><b>临界附近的动力学</b>：当高分子体系的参数（如Flory-Huggins相互作用参数 $\chi$）接近其临界值（如有序-无序转变ODT）时，系统的动力学行为可能被少数几个序参量所主导。本文的“临界参数”思想恰好与此契合，或可用于识别在临界点附近系统动力学退化的代数条件。</li>
+</ul>
+<ul>
+<li><b>局限性</b>:</li>
+<li><b>线性映射的局限</b>：论文只专注于<b>线性</b>聚合映射。对于更普遍的非线性降阶（如基于自编码器的非线性流形学习），该方法不适用。</li>
+<li><b>计算可行性问题</b>：虽然给出了代数算法，但作者明确指出，对于有数十个物种和参数的系统，求解多项式方程组会遭遇“组合爆炸”问题。这使得该算法的实际应用范围可能受限。</li>
+<li><b>物理意义未深入探讨</b>：论文数学上定义了临界参数集，但未深入讨论在真实化学/生物体系中，参数被精确调谐到这个“零测度”子集上的物理可能性（例如，对误差的敏感性）或演化意义。</li>
+<li><b>近似聚合的刻画不足</b>：论文主要讨论精确聚合，而对于当参数接近（但不等于）临界值时，近似聚合的误差估计、有效性和动力学行为，只是初步提及，缺乏定量分析。</li>
+</ul>
+<ul>
+<li><b>后续可跟进方向</b>:</li>
+</ul>
+<ol>
+<li><b>算法实现与优化</b>：开发高效的数值符号混合算法，自动搜索给定大规模反应网络的临界参数集。可以探索利用图论或网络拓扑性质来预筛选，降低计算复杂度。</li>
+<li><b>拓展到非线性降阶</b>：将“临界参数”的概念推广到非线性聚合映射（如深度神经网络）。在临界参数附近，系统动力学是否会更“自然地”落在某个低维流形上？</li>
+<li><b>应用于高分子物理</b>：将本文的框架应用于高分子动力学的简化模型。例如，研究具有特定动态共价键（如Diels-Alder反应）的聚合物网络，其反应速率常数间的特殊关系（临界条件）如何导致网络拓扑的“冻结”或宏观力学行为的突变。</li>
+<li><b>与近似降阶方法融合</b>：将“临界参数”概念与已有的近似降阶方法（如准稳态近似QSSA、计算奇异摄动CSP）结合。在临界值附近，能否利用“隐藏”的守恒律来指导更优的近似降阶，并给出误差边界？</li>
+</ol>
+<ul>
+<li><b>APPENDIX_NEEDED</b>: <b>YES</b></li>
+</ul>
+<p>论文正文已经提供了核心理论框架、关键命题和示例。然而，对于理解如何将复杂网络的代数计算付诸实践，附录中可能包含更具体的<b>Gröbner基计算细节</b>、<b>更复杂的网络示例的完整推导</b>、或<b>对不同参数空间维度的定义与属性</b>的详细讨论。这些对于评估方法的计算可行性至关重要。</p>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2606.28895" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2606.28895" target="_blank">PDF</a>
+  </div>
+</div>
+
+<div class="card" id="p9">
+  <div class="card-header">
+    <h3>9. 关于使用图神经网络进行增材制造短纤维热塑性塑料静态响应代理建模的研究</h3>
+    <p class="title-en">On Surrogate Modeling of Static Response of AM Short-Fiber Thermoplastics Using Graph Neural Networks</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2606.28996" target="_blank">2606.28996</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> Pharindra Pathak (Auburn University, Oakridge National Lab, NASA Glenn Research Center, Auburn University, Auburn University) et al.
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> cond-mat.mtrl-sci
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 短纤维热塑性(SFT)复合材料因其优异的比强度、高生产率和可回收性，越来越多地应用于轻量化航空航天和汽车结构。与连续纤维体系不同，SFT的力学响应受纤维取向、空间团聚和制造诱导孔隙率之间的介观尺度相互作用控制。这些特征在制造构件中表现出显著的空间变异性，并影响刚度、损伤萌生和非线性变形。尽管介观尺度有限元(FE)模型能够解析此类非均匀性，但其在真实三维微结构上的应用仍面临计算难题。
+
+提出了一种数据驱动替代框架，用于预测增材制造-压缩模塑(AM-CM)SFT的力学行为。从微计算机断层扫描数据重建的微结构被离散为基于Voronoi的单元，代表不同的纤维相互作用邻域。每个单元通过考虑基体损伤的非线性有限元模拟进行均质化，所得应力-应变响应训练了一种混合图神经网络-长短期记忆(GNN-LSTM)架构，该架构编码微结构拓扑和与历史相关的力学演化。
+
+该替代模型能够精确预测未见微结构的刚度和应力-应变行为，相对于高保真有限元模拟的$R^2\approx 0.98$，计算成本降低两个数量级以上。将该框架与实验校准的损伤定律耦合表明，纤维取向、团聚和孔隙率共同决定了局部有效刚度。该方法提供了一条物理约束、数据高效的路径，用于识别力学薄弱微结构单元，并加速SFT构件数字孪生的发展。
+  </div>
+  <div class="card-notes">
+    <p>好的，作为一位资深AI研究员，我已完整阅读了论文的主体部分，现在为您呈上整合了第一轮初步总结的详细阅读笔记。</p>
+<p>---</p>
+<h2>完整阅读笔记</h2>
+<h3>一句话总结</h3>
+<p>本文提出一种融合图神经网络与LSTM的代理模型，在保持真实微观拓扑的前提下，实现短纤维复合材料非线性历史依赖力学行为的高效预测，计算成本降低超两个数量级。</p>
+<h3>研究背景与动机</h3>
+<ul>
+<li><b>核心科学问题</b>：短纤维热塑性复合材料（<b>SFTs</b>）的宏观力学响应，尤其是非线性损伤演化，受其复杂的微观结构（如纤维取向、聚集、孔隙）强烈控制。传统的高保真有限元模拟虽能解析这些异质性，但计算成本极高，阻碍了其在参数研究、不确定性量化和多尺度分析中的应用。</li>
+<li><b>已有局限</b>：</li>
+</ul>
+<ol>
+<li><b>均场方法</b>（如Mori-Tanaka）忽略纤维间相互作用和局部损伤热点，精度不足。</li>
+<li><b>纯数据驱动代理模型</b>多基于合成微观结构或仅预测瞬时弹性属性，无法处理路径依赖的损伤演化。</li>
+<li>许多模型未能显式利用真实实验（如μ-CT）获取的物理拓扑信息。</li>
+</ol>
+<ul>
+<li><b>本文填补的空白</b>：建立一个同时满足 (i) 保留真实物理拓扑，(ii) 捕捉历史依赖的非线性损伤，(iii) 实现试片级计算可行性的预测框架。</li>
+</ul>
+<h3>核心材料/体系</h3>
+<ul>
+<li><b>材料体系</b>：<b>20 wt.% 短切碳纤维增强丙烯腈-丁二烯-苯乙烯复合材料</b>（CF-ABS）。</li>
+<li><b>制备工艺</b>：<b>增材制造-压缩成型</b>（AM-CM）混合工艺。</li>
+<li>先通过颗粒挤出增材制造（KUKA机器人挤出系统，喷嘴温度523 K）打印预成型体，该过程诱导纤维沿打印方向取向。</li>
+<li>随后进行压缩成型（523 K，4分钟），以增强层间融合、降低孔隙率并改善界面结合。</li>
+<li><b>微观结构表征</b>：基于高分辨率<b>微计算机断层扫描</b>（μ-CT）数据进行三维重建。μ-CT扫描参数为：Zeiss Xradia 620 Versa系统，140 kV，21 W，4×物镜，各向同性体素尺寸~0.6 μm。</li>
+</ul>
+<h3>关键物理机理</h3>
+<ul>
+<li><b>核心机制：剪切滞后效应</b>。应力通过基体的剪切作用在短纤维间传递，因此纤维间的距离、对齐度和末端效应是决定局部应力传递效率的关键。模型通过<b>剪切传递长度</b> $L_c$ 来量化此效应。</li>
+</ul>
+<p>$$L_c = r_f \sqrt{\frac{E^f_{11}\,\ln(R/r_f)}{2\pi\,G^m_{12}}}$$</p>
+<ul>
+<li><b>损伤起始与演化</b>：</li>
+<li>纤维聚集区和纤维末端因应力集中，成为损伤优先萌生的位置。</li>
+<li>基体（ABS）被建模为<b>各向同性弹塑性材料</b>，塑性硬化采用<b>双项Voce定律</b>：</li>
+</ul>
+<p>$$\sigma_y(e_p) = \sigma_Y+ R_1 \left(1 - e^{-b_1 e_p}\right)+ R_2 \left(1 - e^{-b_2 e_p}\right)$$</p>
+<ul>
+<li>损伤采用<b>标量连续损伤力学</b>（CDM）框架，损伤变量 $D_m$ 按<b>指数软化</b>规律演化：</li>
+</ul>
+<p>$$D_m = 1 - \exp\!\left(-\frac{\langle e_p - e_{p0}\rangle_{+}}{e_{pf}}\right)$$</p>
+<ul>
+<li><b>结构-性能关联</b>：纤维取向分布（FOD）、纤维长度分布（FLD）、纤维聚集和孔隙率共同决定了局部的有效刚度矩阵和损伤演化路径。</li>
+</ul>
+<h3>主要表征结果</h3>
+<ol>
+<li><b>微观结构离散化</b>：</li>
+</ol>
+<ul>
+<li><b>Voronoi划分</b>：通过一个<b>移动球采样</b>过程（球半径 $R_s$ 由 $\mu\text{-CT}$ 测得的平均纤维长度决定），生成代表点作为种子，对微观结构进行<b>Voronoi划分</b>。该方法保证了在纤维密集区生成更小的单元，在树脂富集区生成更大的单元，实现了自适应的拓扑保持离散化（见图4）。随着 $R_s$ 增大，Voronoi单元数量减少，尺寸增大。</li>
+</ul>
+<ol>
+<li><b>高保真数据生成</b>：</li>
+</ol>
+<ul>
+<li>每个Voronoi单元被映射为等效的周期性单胞（RUC）。</li>
+<li>在RUC上进行非线性有限元（FE）均质化，生成应力-应变数据（作为“教师模型”）。</li>
+<li>基体本构模型（弹塑性+损伤）通过纯ABS试样的单轴拉伸实验进行了校准，与实验数据吻合良好（见图5）。</li>
+<li>孔隙的影响通过两步均质化策略引入：先对含孔隙的基体RUC进行均质化，得到等效多孔基体刚度，再将其赋予所有纤维-基体RUC（见图6）。</li>
+</ul>
+<ol>
+<li><b>代理模型架构（核心创新）</b>：</li>
+</ol>
+<ul>
+<li><b>GNN编码器</b>：将每个Voronoi单元构建为一张<b>全连接图</b>，图中每个节点代表一根纤维，边权重 $w_{pq}$ 由剪切滞后理论和纤维取向共同决定：</li>
+</ul>
+<p>$$w_{pq} = \exp\!\left(-\frac{d_{pq}}{L_c}\right) \left(0.90\,\lvert\mathbf{t}_p \cdot \mathbf{t}_q\rvert + 0.10\right)$$</p>
+<p>GNN通过消息传递机制，将纤维的几何信息（长度、端点坐标等）和图拓扑编码成一个 <b>16维的微观结构描述符</b> $z_{\Omega_c}$。</p>
+<ul>
+<li><b>LSTM网络</b>：用于处理序列依赖。输入特征 $\mathbf{q}_t$ 包括非线性应变特征和GNN编码器输出的16维描述符。LSTM的隐藏状态 $\mathbf{h}_t$ 作为<b>替代内部变量</b>，隐式编码了累积的塑性应变和损伤历史。</li>
+</ul>
+<p>$$\mathbf{q}_t = \left[ \frac{\varepsilon_t}{\varepsilon_{\mathrm{pk}}}, \left(\frac{\varepsilon_t}{\varepsilon_{\mathrm{pk}}}\right)^2, \left(\frac{\varepsilon_t}{\varepsilon_{\mathrm{pk}}}\right)^3, \ln(1+\frac{\varepsilon_t}{\varepsilon_{\mathrm{pk}}}), V_{f,\Omega_c}, z_{\Omega_c} \right]$$</p>
+<ul>
+<li><b>集成架构</b>：最终输出为归一化应力，由 <b>Softplus激活函数</b> 保证非负性。峰值应力由<b>随机森林</b>模型基于GNN嵌入进行后处理预测（$R^2 = 0.98$）。</li>
+</ul>
+<p>$$\hat{\sigma}_t^{(\Omega_c)} = \mathrm{Softplus}\!\left(\mathcal{F}_{\mathrm{out}}\!\left(\left[\mathbf{h}_t\;;\;z_{\Omega_c}\right]\right)\right)$$</p>
+<ol>
+<li><b>物理信息正则化</b>：</li>
+</ol>
+<ul>
+<li>复合损失函数中包含多个项以强化物理一致性：</li>
+<li><b>应变加权Huber损失</b> $\mathcal{L}_{\mathrm{Huber}}$：对峰值附近（$\varepsilon_t/\varepsilon_{\mathrm{pk}} \ge 0.8$）的预测误差施加更高权重（最高4倍），确保模型准确捕捉非线性硬化至软化的转变。</li>
+<li><b>预峰单调性约束</b> $\mathcal{L}_{\mathrm{mono}}$：强制峰值前的预测应力单调递增。</li>
+<li><b>其他正则项</b>：平滑性项 $\mathcal{L}_{\mathrm{smooth}}$ 和初始零应力项 $\mathcal{L}_{\mathrm{zero}}$ 等。</li>
+</ul>
+<h3>性能指标</h3>
+<ul>
+<li><b>预测精度</b>：在未见过的微观结构上，预测归一化应力-应变曲线与高保真FE模拟的决定系数 <b>$R^2 \approx 0.98$</b>。</li>
+<li><b>计算加速</b>：计算成本降低了<b>超过两个数量级</b>。</li>
+<li><b>均质化方法</b>：通过两步均质化策略，有效将μ-CT扫描分辨率下的孔隙分布整合到了模型的宏观力学响应预测中。</li>
+</ul>
+<h3>创新点</h3>
+<ol>
+<li><b>拓扑保持的代理框架</b>：首次将基于真实μ-CT数据的物理拓扑（通过图网络）与深度序列模型（LSTM）结合，直接学习从微观结构到非线性历史依赖力学响应的映射。</li>
+<li><b>GNN-LSTM混合架构</b>：将微观拓扑编码（GNN处理空间结构）和路径依赖性（LSTM处理时间序列）解耦，分别交由专门的网络处理，设计精巧且有效。</li>
+<li><b>物理信息引导的损失函数</b>：通过精心设计的复合损失函数，将剪切滞后、预峰应力单调性等物理先验知识融入模型训练，显著提升了预测的物理合理性和鲁棒性。</li>
+<li><b>显著的计算效率提升</b>：在保持高保真度（$R^2 \approx 0.98$）的同时，将计算耗时降低了两个数量级以上，使大规模多尺度模拟成为可能。</li>
+</ol>
+<h3>与我研究的相关性</h3>
+<p><b>高度相关</b>。虽然论文核心是计算力学和机器学习，但其研究对象（<b>短纤维增强热塑性复合材料</b>）、核心物理机制（<b>剪切滞后、微观结构-性能关系</b>）与方法论（<b>多尺度模拟、代理模型</b>）与您的高分子物理研究领域高度契合。它展示了如何利用先进的AI工具解决一个经典的、具有高度实践意义的“结构-性能关系”问题。该方法在您的“<b>力学性能</b>”和“<b>计算/模拟方法</b>”研究方向具有很强的参考价值。</p>
+<h3>局限性</h3>
+<ol>
+<li><b>损伤模型的简化与确定性</b>：基体损伤模型假设均匀损伤（标量 $D_m$），且参数是通过校准确定的确定值。这忽略了损伤的局部性、多轴耦合效应以及材料固有的随机性。代理模型学到的只是这个确定性的教师模型，其上限被教师模型的质量所限。</li>
+<li><b>数据生成成本</b>：代理模型虽快，但生成训练所需的500个Voronoi单元的高保真FE数据仍需要大量计算资源和时间。对于新的材料或工艺，构建初始数据集依然昂贵。</li>
+<li><b>外推能力未知</b>：模型在进行“未见微观结构”测试时表现良好，但这些结构很可能来自与训练集相似的统计分布。对于极端分布外（out-of-distribution）的微观结构或完全不同的加载路径（如多轴、非比例加载），其泛化能力有待进一步验证。</li>
+<li><b>忽略高分子基体的具体物理</b>：模型将基体（ABS）视为一个现象学本构模型，忽略了其高分子物理根源，如粘弹性、链段运动、玻璃化转变等。基体行为对温度和应变率的依赖性也未考虑。</li>
+</ol>
+<h3>后续可跟进方向</h3>
+<ol>
+<li><b>扩展与验证</b>：</li>
+</ol>
+<ul>
+<li>验证模型在不同加载路径（如循环加载、蠕变）下的预测能力。</li>
+<li>研究模型对<b>分布外微观结构</b>的泛化鲁棒性，例如与训练集在纤维取向或聚集程度上差异显著的结构。</li>
+<li>探索该GNN-LSTM架构对其它高分子复合材料体系（如不同纤维类型、基体种类）的适用性。</li>
+</ul>
+<ol>
+<li><b>模型改进</b>：</li>
+</ol>
+<ul>
+<li>引入更丰富的物理信息，如将基体的 <b>粘弹塑性</b> 本构作为教师模型，或直接在损失函数中融入热力学一致性约束（如耗散不等式）。</li>
+<li>将损伤模型升级，考虑<b>各向异性损伤</b>，以更精确地捕捉纤维取向导致的性能退化差异。</li>
+<li>引入<b>不确定性量化</b>（如贝叶斯神经网络），以提供预测结果的信赖区间。</li>
+</ul>
+<ol>
+<li><b>计算与实验闭环</b>：</li>
+</ol>
+<ul>
+<li>将代理模型集成到一个完整的<b>多尺度模拟框架</b>中，对试片甚至构件级别的力学行为进行预测，并直接与宏观力学实验结果进行对比验证。</li>
+<li>探索使用代理模型进行<b>微观结构优化</b>：即给定目标力学性能，反向设计最优的纤维长度、取向和分布。</li>
+</ul>
+<ol>
+<li><b>与大语言模型结合</b>：</li>
+</ol>
+<ul>
+<li>利用大语言模型进行自动化报告生成，或作为交互式接口，帮助用户理解特定微观结构为何会导致特定的力学响应。</li>
+</ul>
+<p>---</p>
+<h2>附录阅读判断</h2>
+<p><code>APPENDIX_NEEDED: NO</code></p>
+<p>论文正文对核心方法（GNN架构、LSTM设计、损失函数构成、关键公式推导）的描述已经相当详细和完整，足以支持对该工作的深入理解和评判。附录A1中提到的“两纤维相互作用有限元模拟”用于校准边权重中的0.90/0.10比例，虽然是一个重要的细节，但从方法论整体来看并非核心，其对最终结果的直接影响可从论文给出的性能指标中推断。阅读附录有助于理解一个具体参数的选择依据，但<b>不影响对论文主要贡献和创新性的判断</b>。</p>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2606.28996" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2606.28996" target="_blank">PDF</a>
+  </div>
+</div>
+
+<div class="card" id="p10">
+  <div class="card-header">
+    <h3>10. 几何介导的密集有序颗粒堆积中的剪切软化</h3>
+    <p class="title-en">Geometry-mediated shear softening in dense ordered granular packings</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2606.29051" target="_blank">2606.29051</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> Liuchi Li, Konstantinos Karapiperis
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> cond-mat.soft
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 对固体颗粒堆积体进行剪切可能较为困难，尤其是在固体分数高且边界约束强的情况下。近期研究表明，当颗粒中嵌入的空隙使其呈现拉胀特性时，可降低堆积体的剪切难度。本文通过有限元模拟证明，即使在看似高度受限的条件下（如维持恒定固体分数的致密有序颗粒堆积体），拉胀性也并非必要条件。具体而言，通过调控颗粒内部空隙的几何构型，我们诱导颗粒在剪切作用下产生明显的弹性各向异性和软化效应，这共同导致颗粒堆积体表观剪切模量的显著降低——降幅高达90%。补充分析表明，该模量降低与接触力各向异性减小高度相关，且对系统尺寸和接触摩擦变化不敏感。本研究揭示了由多体接触力学调控的颗粒尺度几何构型如何影响宏观体系尺度弹性，为设计具有目标集体力学性能的软颗粒超材料提供了最小化设计机制。
+  </div>
+  <div class="card-notes">
+    <p><code>`</code>markdown</p>
+<h1>快速阅读笔记：Geometry-mediated shear softening in dense ordered granular packings</h1>
+<h2>一句话总结</h2>
+<p>通过有限元模拟，论文展示了在致密有序颗粒堆积中，通过控制颗粒内空隙几何形状（而非依赖颗粒的拉胀性）即可显著降低堆积体的表观剪切模量（最高达90%），揭示了颗粒尺度几何经由多体接触力学调控宏观弹性的机制。</p>
+<h2>研究问题</h2>
+<p>在恒定高固相分数和强边界约束下，如何设计颗粒几何（不依赖拉胀性）以降低剪切模量，从而使堆积体更易剪切？</p>
+<h2>核心方法</h2>
+<ul>
+<li>使用<b>有限元模拟</b>对致密有序颗粒堆积进行剪切。</li>
+<li>通过控制<b>颗粒内嵌入空隙的几何形状</b>（诱导弹性各向异性和表观软化），观察其对整个堆积体剪切模量的影响。</li>
+<li>分析<b>接触力各向异性</b>的变化，并测试对<b>系统尺寸</b>和<b>接触摩擦</b>的敏感性。</li>
+</ul>
+<h2>主要结果</h2>
+<ul>
+<li>在恒定固相分数下，通过优化空隙几何，堆积体的表观剪切模量<b>降低高达90%</b>。</li>
+<li>这种剪切软化与<b>接触力各向异性的降低</b>强相关。</li>
+<li>结果对<b>系统大小和接触摩擦变化不敏感</b>，表明设计具有鲁棒性。</li>
+</ul>
+<h2>潜在价值</h2>
+<ul>
+<li>提供了一种<b>无需拉胀性</b>的颗粒超材料设计新思路，简化了制造约束。</li>
+<li>揭示了从颗粒尺度几何到宏观弹性响应的多尺度力学联系，有助于设计可编程软物质和智能超材料。</li>
+<li>所提出的“最小设计机制”可为未来研究颗粒集合体的非线性、可调力学性质提供基础。</li>
+</ul>
+<p><code>`</code></p>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2606.29051" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2606.29051" target="_blank">PDF</a>
+  </div>
+</div>
+
+<div class="card" id="p11">
+  <div class="card-header">
+    <h3>11. 流-极性解耦与稠密细菌活性流体中介观有序下的普适迁移率增强</h3>
+    <p class="title-en">Flow-polarity decoupling and universal mobility enhancement in dense bacterial active fluids with mesoscale order</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2606.29410" target="_blank">2606.29410</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> Yuhao Wang, Premkumar Leishangthem, Yiming Ding, Xinliang Xu, Yilin Wu
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> cond-mat.soft
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 由活细胞或合成微观游动体构成的活性流体展现出丰富的涌现行为和非平衡力学性质，这不仅揭示了多种生物过程的机理，也为自主流体系统和自驱动材料的工程化设计提供了依据。微观游动体的个体行为及其与自生介观尺度溶剂流的相互作用构成了活性流体涌现性质的基础。本研究通过对细胞体、鞭毛及流场的同时成像，探索了致密三维细菌活性流体中的微观动力学。一个令人惊奇的发现是，细胞的极性在介观尺度流场区域内呈随机分布，然而系统却在自生溶剂流中展现出介观尺度有序性。尽管表观上流动与极性解耦，但细胞相对于局部溶剂流的运动主要沿逆流方向行进，且自平流速度统一由流动控制的常数增强。基于完整流体动力学相互作用的数值建模揭示，所观测到的流动-极性解耦源于各向异性微观游动体普遍采用的力偶极子假设的失效：在存在流场梯度和近场流体动力学相互作用时，单个游动细菌对周围流体施加的总活性作用力方向不再与其极性一致。模拟结果表明，近场相互作用作为一种新型的、构型依赖的涌现活性作用力，深刻影响着致密细菌悬浮液中的自组织和输运。综上，本研究为忠实理解致密极性活性流体的集体行为建立了基础知识。
+  </div>
+  <div class="card-notes">
+    <h1>论文快速阅读笔记</h1>
+<h2>一句话总结</h2>
+<p>本文通过实验和模拟发现，在密集的3D细菌活性流体中，细菌的极性方向与介观尺度溶剂流场之间存在解耦现象，并揭示了上游定向运动导致的普遍迁移率增强机制。</p>
+<h2>研究问题</h2>
+<p>密集细菌活性流体中，微观游泳者的个体行为与自生介观溶剂流场之间的相互作用如何影响系统的自组织与输运性质？特别是，细菌的极性（方向）与流场之间是否存在直接的耦合关系？</p>
+<h2>核心方法</h2>
+<ul>
+<li>同时成像细菌的细胞体、鞭毛和流场，实现微观动力学测量。</li>
+<li>结合全流体动力学相互作用的数值模拟，分析活性力施加方向与极性的关系。</li>
+</ul>
+<h2>主要结果</h2>
+<ul>
+<li>细菌极性在介观流区中随机分布，但自生溶剂流场却呈现出介观尺度的有序性（流-极性解耦）。</li>
+<li>细菌相对局部流场的运动呈现上游导航趋势，其自迁移动速度被一个流控常数普遍增强。</li>
+<li>模拟揭示解耦源于对非对称微游泳者力偶极子假设的失效：在流梯度与近场流体动力学相互作用下，细菌施加的活性总力方向不再与其极性对齐。</li>
+<li>近场相互作用构成一种新的依赖于构型的活性力，深刻影响致密悬浮液的自组织与输运。</li>
+</ul>
+<h2>潜在价值</h2>
+<ul>
+<li>修正了传统活性流体理论中对微生物施加力偶极子方向的假设，为理解密集极性活性流体的集体行为建立了基础性知识。</li>
+<li>对工程化自驱动材料、自主流体系统以及生物过程（如生物膜形成、细菌集群）的建模具有指导意义。</li>
+</ul>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2606.29410" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2606.29410" target="_blank">PDF</a>
+  </div>
+</div>
+
+<div class="card" id="p12">
+  <div class="card-header">
+    <h3>12. 由活性机器人组成的磁性鞭毛中搏动的涌现</h3>
+    <p class="title-en">Emergence of beating in a magnetic flagellum consisting of active bots</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2606.29499" target="_blank">2606.29499</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> Francisca Guzm\'an-Lastra, Daniel Hern\'andez, Nicol\'as Quintriqueo, Enkeleida Lushi, Erick Burgos
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> cond-mat.soft
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 我们研究了由厘米级振动机器人（Hexbugs）与嵌入式钕偶极子构建的磁自推进粒子（MSPPs）链中鞭毛拍打行为的涌现。当链的一端被固定且自推进启动时，纵向应力沿链累积直至克服磁弯曲刚度，触发屈曲不稳定性，从而驱动持续性的鞭毛拍打。结合实验与数值模拟，我们识别出三种不同的动力学状态——直链、稳定鞭毛拍打以及分裂——这些状态由主动力、链长及磁弯曲刚度之间的竞争所控制。拍打的启动需要由磁力矩与旋转噪声之间的平衡所设定的种子错位，并且我们证明该转变对应超临界霍普夫分岔。一个运动学模型以极佳的精度复现了所观测的取向动力学。磁弯曲刚度直接源于偶极-偶极相互作用，可通过偶极强度和链长完全调节，从而实现对活性和刚度的独立实验控制。我们的结果建立了一个用于研究活性细丝中力致屈曲与自振荡的宏观平台，与生物和合成微游泳体中的鞭毛运动直接相关。
+  </div>
+  <div class="card-notes">
+    <h1>论文阅读笔记</h1>
+<h2>一句话总结</h2>
+<p>本文通过实验和模拟，展示了由磁性自推进粒子（MSPP）组成的链在固定一端时，因纵向应力克服磁弯曲刚度而触发屈曲不稳定性，从而产生持续鞭毛式拍打运动。</p>
+<h2>研究问题</h2>
+<p>如何利用宏观活性粒子链模拟生物鞭毛的拍打运动？其动态行为（如拍打、断裂）如何受活性力、链长和磁弯曲刚度的调控？</p>
+<h2>核心方法</h2>
+<ul>
+<li><b>实验系统</b>：使用厘米级振动机器人（Hexbugs）嵌入钕磁偶极子，构建磁自推进粒子链。</li>
+<li><b>数值模拟</b>：结合实验观测，分析三种动力学状态（直链、稳定拍打、断裂）。</li>
+<li><b>理论分析</b>：通过运动学模型重现方向动力学，并指出拍打触发对应超临界Hopf分岔，需要种子失准（由磁扭矩与旋转噪声平衡产生）。</li>
+</ul>
+<h2>主要结果</h2>
+<ul>
+<li>识别出三种动态状态：直链、稳定鞭毛拍打、链断裂，并由活性力、链长和磁弯曲刚度之间的竞争决定。</li>
+<li>拍打起始需要种子失准，该失准由磁扭矩与旋转噪声平衡产生，且转变对应于超临界Hopf分岔。</li>
+<li>运动学模型与实验观测高度吻合。</li>
+<li>磁弯曲刚度可通过偶极强度和链长完全调节，从而独立控制活性和刚度。</li>
+</ul>
+<h2>潜在价值</h2>
+<p>为研究活性细丝中的力诱导屈曲和自激振荡提供了宏观实验平台，直接关联生物和合成微游动体的鞭毛运动，有助于理解活性物质的自组织动力学。</p>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2606.29499" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2606.29499" target="_blank">PDF</a>
+  </div>
+</div>
+
+<div class="card" id="p13">
+  <div class="card-header">
+    <h3>13. 网格蛋白介导的内吞作用中的通路变异性、外壳硬化与机械适应</h3>
+    <p class="title-en">Pathway variability, coat stiffening and mechanical adaptation during clathrin-mediated endocytosis</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2606.30267" target="_blank">2606.30267</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> Johannes H. H. Dreckhoff (Heidelberg University, Germany), Ulrich S. Schwarz (Heidelberg University, Germany), Leon Lettermann (Heidelberg University et al.
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> cond-mat.soft
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 细胞中的网格蛋白组装体可以持续存在为扁平斑块，在部分内陷后中止，或者闭合形成网格蛋白包被囊泡，但这些不同命运的决定因素仍未明确。为探究网格蛋白组装体的随机且复杂的动力学，我们开发了一个动力学蒙特卡罗模拟框架，将单个网格蛋白单元与自适应连续膜相耦合。在此混合离散-连续描述中，有效包被弯曲刚度和优选包被曲率在生长过程中涌现，而非作为材料参数预设。一旦连接，弯曲的晶格会从分子弯曲模式转变为包被级别的刚性，因为曲率变化需要增加拉伸或压缩，而新整合的三脚蛋白复合体则硬编码了依赖历史的优选曲率。基于非欧几里得弹性的解析理论识别了相关内部变量，并预测了经模拟验证的生长规律。相同的微观组装规则通过有效膜-包被能量景观中的两个顺序门控产生了扁平、停滞和闭合的包被。与实验观察到的包被几何形状及纳米切割诱导的曲率变化进行比较，结果与我们的理论预测一致，且无需任何拟合参数。因此，网格蛋白包被表现为一种具有预应力和记忆的适应性组装体，其命运和材料参数反映了其生长所处的环境。
+  </div>
+  <div class="card-notes">
+    <p>好的，作为一位资深 AI 研究员和软物质材料专家，我开始阅读这篇关于网格蛋白介导内吞作用的论文。我将严格遵循你提供的高分子物理论文阅读指南，特别是关注其中的力学、网络拓扑和自适应性等核心概念，进行初步总结。</p>
+<h3>初步总结</h3>
+<ul>
+<li><b>一句话总结</b>: 该研究通过混合连续-离散模型揭示了网格蛋白外壳的<b>力学适应性</b>和<b>生长记忆效应</b>，解释了其从平板到囊泡的多种命运，且理论无参数预测与实验吻合。</li>
+</ul>
+<ul>
+<li><b>研究背景与动机</b>:</li>
+<li><b>核心问题</b>: 细胞内的网格蛋白组装体呈现出不同的命运：<b>扁平斑块、停滞的中期凹坑，或者完全闭合的囊泡</b>。决定这些不同命运的物理和力学机制尚不明确。</li>
+<li><b>与已有工作的差异</b>: 以往的研究往往将网格蛋白外壳的<b>有效弯曲刚度</b>和<b>自发曲率</b>视为固定的、预先设定的材料参数。这篇论文的关键创新在于，认为这些参数<b>并非先验存在</b>，而是在外壳的生长过程中<b>动态涌现</b>的。作者指出，网格蛋白外壳作为一个<b>自适应系统</b>，其命运和材料参数本身就是其生长环境的函数。</li>
+</ul>
+<ul>
+<li><b>核心体系</b>【类比理解】:</li>
+<li><b>生物体系</b>: <b>网格蛋白介导的内吞作用</b> (clathrin-mediated endocytosis, CME)。这是一个细胞生物学过程，但在作者看来，其核心是<b>网络生长与膜力学</b>的耦合问题。</li>
+<li><b>关键组分</b>:</li>
+<li><b>网格蛋白 (Clathrin)</b>: 由三个重链和三个轻链组成的三脚蛋白复合体 (triskelion)，可以自组装形成具有<b>多面体网络结构</b>的外壳。可以类比为一种<b>自组装的高分子网络</b>。</li>
+<li><b>细胞膜 (Membrane)</b>: 被模拟为一个<b>连续的弹性薄壳</b>或膜，可以变形。</li>
+<li><b>辅助蛋白</b>: 如发动蛋白(dynamin)等，负责最后的囊泡切断等过程，但本文重点在于壳层本身生长。</li>
+</ul>
+<ul>
+<li><b>关键物理机理</b>【核心发现】:</li>
+<li><b>非欧几里得弹性 (Non-Euclidean Elasticity)</b>: 网格蛋白外壳的曲率变化不是简单的弯曲，而是需要主要单体的<b>拉伸或压缩</b>。这导致了从分子尺度的弯曲模式向外壳尺度的刚性模式的转变，是“<b>刚度化</b>”的来源。</li>
+<li><b>历史依赖性与记忆效应</b>: 新加入的网格蛋白三脚蛋白体会“<b>硬编码</b>”一个依赖于当时<b>膜局部曲率</b>的<b>历史依赖</b>的优选曲率。这赋予外壳一种“<b>生长记忆</b>”，使得早期的生长路径会影响最终形状。</li>
+<li><b>两步能量门控</b>: 微观的组装规则，通过两个连续的<b>有效膜-外壳能量景观</b>中的“<b>门</b>”，分别对应<b>扁平→轻度内陷</b>和<b>轻度内陷→完全闭合</b>的转变。这解释了为什么相同的组装规则能产生不同的命运（扁平、停滞、闭合）。</li>
+</ul>
+<ul>
+<li><b>主要表征结果</b>【方法论亮点】:</li>
+<li><b>理论模型</b>: 建立了一个<b>混和离散-连续</b>的<b>动力学蒙特卡洛</b> (kMC) 模拟框架。网格蛋白被视为离散的智能体 (Agent)，膜是连续的，两者耦合。</li>
+<li><b>关键结果</b>: 模拟产生的<b>外壳几何形状</b>和通过<b>纳米切割</b> (nanodissection) 实验观察到的<b>曲率变化</b>，与理论预测<b>定量吻合</b>，且<b>不使用任何拟合参数</b>。</li>
+<li><b>结论</b>: 证明了网格蛋白外壳是一个具有<b>预应力和记忆</b>的<b>自适应组装体</b>。</li>
+</ul>
+<ul>
+<li><b>创新点</b>:</li>
+</ul>
+<ol>
+<li><b>动态涌现的材料参数</b>: 首次提出并证明了网格蛋白外壳的有效弯曲刚度和自发曲率不是预设的，而是在<b>生长过程中动态涌现</b>的。</li>
+<li><b>无参数预测与实验吻合</b>: 理论模型能够<b>定量、无拟合参数地</b>预测实验结果，显示了其物理机制的准确性。</li>
+<li><b>网络生长的力学-几何耦合理论</b>: 将 <b>非欧几里得弹性</b> 理论成功应用于解释生物分子网络的生长和形态决定问题，为理解其他类似<b>活性网络</b>和<b>自适应材料</b>提供了新范式。</li>
+</ol>
+<p><b>Agent提问</b>:</p>
+<ol>
+<li>为了更深入地理解，我需要知道 <b>动力学蒙特卡洛 (kMC)</b> 模型的具体细节：网格蛋白“智能体”和连续膜之间的<b>耦合规则</b>是什么？膜是如何“适应”网格蛋白外壳生长的（例如，膜的弹性能如何计算）？</li>
+<li>论文中提到“<b>两步能量门控</b>”和“<b>有效膜-外壳能量景观</b>”。能否提供这两个门对应的<b>具体能量势垒</b>或<b>相图</b>？它们如何区分三种命运（扁平、停滞、闭合）？</li>
+<li>所谓的“<b>纳米切割实验</b>”具体是如何进行的？它又如何验证了理论预测的<b>历史依赖性</b>和<b>预应力</b>？</li>
+</ol>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2606.30267" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2606.30267" target="_blank">PDF</a>
+  </div>
+</div>
+
+<div class="card" id="p14">
+  <div class="card-header">
+    <h3>14. 组织顶点模型中的应力张量场和介观应力</h3>
+    <p class="title-en">Stress tensor field and mesoscopic stresses in the vertex model for tissues</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2606.30401" target="_blank">2606.30401</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> Paulo C. Godolphim, Leonardo G. Brunnet, Rodrigo Soto
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> cond-mat.soft
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 机械应力是生物组织中的基本调控因子，其中顶点模型（VM）在理论研究和力推断中具有关键作用。然而，目前尚不存在适用于顶点模型的统一应力张量表达式。本文给出其微观推导过程，将介观应力与顶点模型中的力联系起来。应力场在张力如何跨细胞分布方面存在自由度，这使得先前的表达式可作为该应力场的特定实现形式出现，并提示真实细胞中介观应力与细胞骨架力传递结构之间存在关联。
+  </div>
+  <div class="card-notes">
+    <p>好的，这是根据您提供的论文信息生成的快速阅读笔记。</p>
+<p>---</p>
+<p><b>论文标题</b>: Stress tensor field and mesoscopic stresses in the vertex model for tissues</p>
+<p><b>作者</b>: Paulo C. Godolphim, Leonardo G. Brunnet, Rodrigo Soto</p>
+<p><b>ArXiv ID</b>: 2606.30401</p>
+<h2>摘要</h2>
+<h3>一句话总结</h3>
+<p>本文为生物组织顶点模型（VM）中的应力张量场提供了一个微观推导，揭示了其在张力分布上的自由度，并连接了介观应力与细胞骨架力传递架构。</p>
+<h3>研究问题</h3>
+<p>当前顶点模型中缺乏统一的应力张量表达式，本文旨在解决如何从微观力学出发，构建一个统一且严谨的应力张量表达式。</p>
+<h3>核心方法</h3>
+<p>通过微观力学推导，将介观应力与顶点模型的受力直接关联。研究发现应力场在细胞间张力如何分布上存在一个自由度。</p>
+<h3>主要结果</h3>
+<ul>
+<li>从微观推导出顶点模型的应力张量场。</li>
+<li>发现应力张量场在张力分布上存在自由度。</li>
+<li>该自由度使得之前的多种应力表达式可以视为该统一场的特例。</li>
+</ul>
+<h3>潜在价值</h3>
+<p>这项工作为顶点模型在理论研究和力推断（force-inference）应用中提供了更坚实的力学基础，并将介观应力与真实细胞中的具体力传递结构（细胞骨架）联系起来，有助于更深入地理解生物组织中的机械调控机制。</p>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2606.30401" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2606.30401" target="_blank">PDF</a>
+  </div>
+</div>
+
+<div class="card" id="p15">
+  <div class="card-header">
+    <h3>15. 非手性 D4h 对称锌酞菁凝聚体中的自发对称性破缺与涌现螺旋性</h3>
+    <p class="title-en">Spontaneous Symmetry Breaking and Emergent Helicity in Achiral D4h-Symmetric Zinc Phthalocyanine Condensates</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2606.30494" target="_blank">2606.30494</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> Bruno S. Zanatta, Giovani B. de Oliveira, Marcos E. G. Carmo, Antonio Eduardo H. Machado, Thiago F. Silva et al.
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> cond-mat.mtrl-sci
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 本文展示了D4h对称锌酞菁(ZnPc)超分子聚集体中的自发对称性破缺。在M06/DGDZVP水平上进行的从头算密度泛函理论计算表明，分子间相互作用诱发大环骨架的微弱弛豫，产生氮杂桥(C-N-C)伸缩模式和吡咯环对称伸缩的特征性红移。共聚焦拉曼光学活性测量进一步揭示了1505 cm⁻¹和1338 cm⁻¹处的负Cotton效应，为涌现的超分子手性提供了证据。我们的发现将原始ZnPc确定为分子凝聚体中自发自组装手性对称性破缺的模型系统，并为手性光学、自旋选择性和量子功能材料开辟了新机遇。
+  </div>
+  <div class="card-notes">
+    <h1>论文快速总结</h1>
+<h2>一句话总结</h2>
+<p>本文通过理论计算和拉曼光学活性实验，证明了D4h对称的锌酞菁超分子聚集体中发生自发对称性破缺并涌现出超分子手性。</p>
+<h2>研究问题</h2>
+<ul>
+<li>对称性较高的分子（D4h对称）在凝聚态中是否能自发出现手性？</li>
+<li>分子间相互作用如何诱导结构弛豫并产生手性信号？</li>
+</ul>
+<h2>核心方法</h2>
+<ul>
+<li>采用M06/DGDZVP水平的密度泛函理论（DFT）计算，分析分子间相互作用对大环框架的影响。</li>
+<li>使用共焦拉曼光学活性（ROA）测量，探测特定波数（1505 cm⁻¹和1338 cm⁻¹）的Cotton效应。</li>
+</ul>
+<h2>主要结果</h2>
+<ul>
+<li>分子间相互作用使锌酞菁大环框架发生细微弛豫，导致氮桥（C-N-C）伸缩模和吡咯环对称伸缩出现特征性红移。</li>
+<li>在1505 cm⁻¹和1338 cm⁻¹处观察到负的Cotton效应，证实了涌现的超分子手性。</li>
+</ul>
+<h2>潜在价值</h2>
+<ul>
+<li>将纯锌酞菁确定为自发自组装手性对称性破缺的模型系统。</li>
+<li>为手性光学、自旋选择性以及量子功能材料的设计提供新思路。</li>
+</ul>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2606.30494" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2606.30494" target="_blank">PDF</a>
+  </div>
+</div>
+
+<div class="card" id="p16">
+  <div class="card-header">
+    <h3>16. 剪纸切口产生的尺度耦合控制液晶弹性体的涌现力学行为</h3>
+    <p class="title-en">Scale-coupling from kirigami cuts controls emergent mechanics in liquid crystal elastomers</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2606.30501" target="_blank">2606.30501</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> M. Strugaru, M. Ly, Q. Martinet, B. Bickel, J. Palacci
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> cond-mat.soft
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 传统材料的性质源于其微观组成和排列，而力学超材料则取决于介观结构而非构成材料本身。弥合这两种范式——通过宏观几何变化来协调微观自由度并编程力学行为——仍是一项核心挑战。本文证明，在具有各向异性响应的固体中引入切口可实现这种关联。利用带有剪纸图案的液晶弹性体（LCE）薄片，我们揭示出通过切口调控应变能够利用分子各向异性来控制涌现力学行为。同样，切口图案与LCE分子相变之间的相互作用实现了软体机器人功能，例如具有远程驱动的超软夹爪，以及可在温度变化下可逆变形的结构——这些行为是传统剪纸或LCE薄片单独无法实现的。因此，LCE剪纸建立了一类新型多尺度超材料，其中几何结构决定了访问微观自由度的途径，从而编程宏观功能。
+  </div>
+  <div class="card-notes">
+    <p>好的，作为一名资深的AI研究员，我将基于您提供的补充材料，对这篇关于液晶弹性体剪纸的论文进行深入的、符合高分子物理领域规范的详细分析。我会整合第一轮的初步总结，并针对性地回应之前提出的问题。</p>
+<p>---</p>
+<h3><b>论文阅读笔记 (第二轮深度分析)</b></h3>
+<ul>
+<li><b>一句话总结</b>：通过将LCE的分子尺度相变与剪纸图案的几何效应耦合，实现了对宏观力学响应（尤其是回弹动力学）的<b><i>可编程</b></i>控制，并展示了其在超软夹持和多目标形状变换中的应用。</li>
+</ul>
+<ul>
+<li><b>研究背景与动机</b>（补充与深化）:</li>
+</ul>
+<ol>
+<li><b>核心科学问题</b>：如何在不改变材料化学成分的前提下，通过介观结构设计实现对软材料动态力学行为（如回弹速率）的<b><i>精确控制</b></i>？传统LCE的动力学主要由其分子链的粘弹性决定，可调性有限。剪纸结构虽然能改变刚度，但其动力学行为通常与材料的本征粘弹性无关。本文旨在探索两者的耦合，创造一种新的范式，使宏观动力学可以由结构设计来编程。</li>
+<li><b>与已有工作的差异</b>：</li>
+</ol>
+<ul>
+<li><b>超越单一驱动</b>：传统LCE研究聚焦于在相变温度上下展现不同的宏观形状或模量（双稳态）。本文则关注<b>在单一温度下</b>（尤其是室温），通过预先施加的应变和剪纸图案，实现对回弹“路径”和“速率”的精细控制。</li>
+<li><b>动力学可编程</b>：传统剪纸力学研究多集中于静态或准静态力学性能（如泊松比、有效模量）。本文首次系统性地研究了<b>剪纸LCE的回弹动力学</b>，并揭示了影响因素。</li>
+<li><b>材料与结构耦合的深度机制</b>：本文不仅证明了耦合现象，还通过局部应变分析，定量地揭示了耦合的微观机制：不同图案导致剪切带区域局部应变在平行项（$\epsilon_{||}$）和垂直项（$\epsilon_{\perp}$）上的不同分布。这种分布直接影响了LCE中液晶基元的旋转和软弹性响应，从而产生不同的回弹动力学。</li>
+</ul>
+<ul>
+<li><b>核心材料/体系</b>（针对第一轮的详细回答）:</li>
+<li><b>高分子体系</b>: <b>液晶弹性体 (LCE)</b>。基于硫醇-烯点击化学 (thiol-ene click chemistry)。</li>
+<li><b>配方与制备</b>:</li>
+</ul>
+<ol>
+<li><b>化学合成</b>: 将<b>RM257</b>（液晶基元）、<b>HHMP</b>（光引发剂）与溶剂甲苯混合加热溶解。加入<b>四硫醇交联剂</b> (pentaerythritol tetrakis (3-mercaptopropionate)) 、<b>EDDET二硫醇间隔剂</b> (2,2'-(ethylenedioxy) diethanethiol) 和<b>DPA催化剂</b> (dipropylamine) 进行低聚反应。混合物浇铸到模具中，在通风橱中蒸发甲苯，然后在真空烘箱中进一步去除溶剂，形成<b>各向同性</b>的LCE片材。</li>
+<li><b>机械对准 (Mechanical Alignment)</b>: 将合成好的LCE片材安装在可移动边缘的金属网格上，在室温下沿一个方向拉伸约40%并固定。</li>
+<li><b>交联 (Crosslinking)</b>: 将拉伸状态的网格置于<b>36W紫外光</b>下照射30分钟（每面），形成初步的液晶网络，固定住与拉伸方向一致的液晶基元取向。由此形成的LCE，液晶基元的取向方向即为光轴（也称<b>director n</b>，或$\parallel$方向）。</li>
+<li><b>切割</b>: 使用CO₂激光切割机 (Trotec Speedy 400 flexx) 将剪纸图案刻在LCE薄膜上。</li>
+</ol>
+<ul>
+<li><b>关键物理参数</b> (来自表征):</li>
+<li><b>相变温度</b>: LCE由向列相（有序）向各向同性相（无序）转变的温度在$80^\circ\mathrm{C}$左右。</li>
+<li><b>热应变</b>: 从室温加热到$80^\circ\mathrm{C}$，LCE沿对准方向 ($\parallel$) 收缩约40%，并在垂直方向 ($\perp$) 和厚度方向上膨胀。</li>
+<li><b>各向异性力学性质</b> (室温$25^\circ\mathrm{C}$):</li>
+<li>平行于<b>n</b>的方向 ($\parallel$): 具有<b>线性</b>应力-应变行为，杨氏模量$E_{\parallel} \approx 1.5\ \mathrm{MPa}$。</li>
+<li>垂直于<b>n</b>的方向 ($\perp$): 具有高度<b>非线性</b>的应力-应变行为，表现出LCE特有的<b>软弹性 (soft-elasticity)</b> 效应（即液晶基元在外力作用下旋转，导致刚度降低）。杨氏模量$E_{\perp} \approx 0.3\ \mathrm{MPa}$（在低应变范围内）。</li>
+<li><b>Kirigami几何参数</b>:</li>
+</ul>
+<p>论文详细研究了三种切割图案：</p>
+<ul>
+<li><b>2 cuts, 3 cuts, 5 cuts</b>: 指沿垂直于拉伸方向（即平行于<b>n</b>）引入的切口数量。切口阵列均匀分布在LCE片材上。切口长度<b>l₀</b>的范围从8mm到12mm不等（对不同的图案）。</li>
+</ul>
+<ul>
+<li><b>关键物理机理</b>（补充局部应变与动力学耦合的细节）:</li>
+<li><b>尺度耦合的量化</b>: 通过对不同剪纸图案的LCE进行单轴拉伸实验（平行于<b>n</b>）并测量拉伸后回弹的动力学，发现回弹时间 ($\tau$) 随初始应变 ($\epsilon_0$) 增加而增加。而对于普通橡胶剪纸，回弹时间随应变增加而减小。这一相反的效应证明了LCE的分子响应（液晶基元旋转与熵恢复）在回弹过程中起主导作用。</li>
+<li><b>局部应变的作用机理</b>:</li>
+</ul>
+<ol>
+<li><b>非均匀变形</b>: 剪纸图案的存在使得全局拉伸应变（沿$\parallel$方向）在局部（特别是切口尖端附近）产生复杂的应力与应变分布。利用数值模拟（简单正交各向异性模型）计算切口尖端局部三角形的应变<b>$\epsilon_{XX}$</b> (平行于<b>n</b>) 和 <b>$\epsilon_{YY}$</b> (垂直于<b>n</b>)。</li>
+<li><b>关键相关性</b>: 不同图案对应的<b>局部应变</b> ($\epsilon_{YY}$）与宏观<b>回弹时间</b> ($\tau$）之间呈现出<b><i>普适的单一曲线关系</b></i> --- 无论图案如何，只要局部应变 $\epsilon_{YY}$ 相同，回弹时间就大致相同。这证明了宏观动力学由局部（尤其是切口尖端）的分子旋转决定，而剪纸图案是调控这个局部变量的“放大器”。这个观测结果通过图S2（不同阈值下）中对不同图案的 $\tau$ 与 $\epsilon_{YY}$ 的<b><i>数据塌缩 (data collapse)</b></i> 有力地证明了。</li>
+<li><b>分子机制解释</b>: 初始拉伸$(\epsilon_0)$ 越大，切口尖端旋转变形的局部应变$\epsilon_{YY}$ 越高，液晶基元旋转越厉害。当释放拉伸后，LCE基体要恢复到原本的取向有序状态，这个过程中液晶基元的旋转恢复是粘弹性过程的主要贡献者。$\epsilon_{YY}$ 越大，液晶基元需要旋转的角度越大，恢复过程越慢，从而导致更长的回弹时间 $\tau$。</li>
+</ol>
+<ul>
+<li><b>主要表征结果</b>:</li>
+</ul>
+<ol>
+<li><b>回弹动力学 (Recoil Dynamics)</b>:</li>
+</ol>
+<ul>
+<li><b>关键发现</b>: LCE剪纸的回弹时间 $\tau$ 随初始应变 $\epsilon_0$ 增加而增加（与普通橡胶相反）。</li>
+<li><b>数据塌缩</b>: 不同剪纸图案（2/3/5 cuts）的 $\tau$ 与 $\epsilon_0$ 关系曲线不同，但当以局部应变$\epsilon_{YY}$为横坐标时，所有数据塌缩为一条主曲线（图S2, 主图）。这表明<b>局部应变</b>是控制宏观回弹速率的通用变量。</li>
+<li><b>温度效应</b>: 在$80^\circ\mathrm{C}$（各向同性态）下，回弹时间显著缩短，且不受应变影响。</li>
+</ul>
+<ol>
+<li><b>力学性能 (Tensile Tests)</b>:</li>
+</ol>
+<ul>
+<li><b>LCE剪纸</b>: 力-位移曲线在室温下呈现<b>线性</b>行为，这与传统橡胶剪纸（呈现非线性行为）不同，这是LCE材料本身的非线性软弹性与剪纸结构非线性相互抵消的结果。</li>
+<li><b>数值模拟验证</b>: 使用简单的正交各向异性壳模型（各向同性模型用于高温，正交模型用于室温）可以很好地预测实验力-位移曲线。</li>
+</ul>
+<ol>
+<li><b>切口尖端变形 (Cut Tip Blunting)</b>:</li>
+</ol>
+<ul>
+<li>实验观察到切口尖端在拉伸下变圆。通过测量尖端曲率半径 $R$，发现其与计算得出的局部$\epsilon_{YY}$呈线性关系，且不同图案的数据再次塌缩为一条直线，进一步验证了计算模型对局部应变的预测能力。</li>
+<li>椭圆形的钝切口相比尖锐切口可承受25%更大的应变才发生撕裂。</li>
+</ul>
+<ol>
+<li><b>形状变形 (Shape Morphing)</b>:</li>
+</ol>
+<ul>
+<li>一个2D矩形LCE剪纸片，其两端固定，通过施加不同的<b>温度场</b>，可以驱动其展开成具有不同正高斯曲率的3D形状（如鞍形、信封形等）。红外相机测量了温度模式，证明了通过简单的热源就能编程3D变形。</li>
+<li><b>数值模拟与实验高度吻合</b>，验证了模型用于预测复杂变形模式的能力。</li>
+</ul>
+<ul>
+<li><b>性能指标</b>:</li>
+<li><b>LCE模量</b> (室温)：$E_{\parallel} = 1.5\ \mathrm{MPa}$, $E_{\perp} = 0.3\ \mathrm{MPa}$。</li>
+<li><b>回弹时间 ($\tau$)</b>：在室温下从约0.2秒 (低应变) 到超过1.5秒 (高应变)，取决于初始应变和切口图案。</li>
+<li><b>可承受应变</b>：相比尖锐切口，椭圆切口可使LCE剪纸片承受的应变增加约25%。</li>
+<li><b>夹持极限压力</b>：针对论文中展示的超软夹持器，其施加在薄铝壳上的压力低于导致其屈曲的阈值（约10 kPa）。</li>
+</ul>
+<ul>
+<li><b>创新点 (1-3 条)</b>:</li>
+</ul>
+<ol>
+<li><b>揭示了材料本征响应与结构几何的非平凡耦合机制</b>：定量地证明了宏观回弹动力学由切口尖端附近的局部垂直应变（$\epsilon_{YY}$）控制，而非宏观应变。这为通过设计介观结构编程软材料动力学提供了理论基础。</li>
+<li><b>提出并验证了普适的局部应变标度律</b>：成功地将不同剪纸图案的回弹时间数据塌缩到一条由局部应变定义的单一曲线上，证明了该机制的普适性，简化了复杂系统的设计。</li>
+<li><b>实现了多目标形状动态编程</b>：利用单一的LCE剪纸片，通过外部温度场的空间图案化，就能在同一片材料中产生多种复杂且可逆的3D构型，展示了其在自适应结构中的强大潜力。</li>
+</ol>
+<ul>
+<li><b>与我研究的相关性</b>:</li>
+</ul>
+<p>与该研究员的知识库<b>高度匹配</b>，具体体现在：</p>
+<ul>
+<li><b>高分子链动力学</b>：核心机制是LCE的分子链取向（软弹性）及其与外部应力的耦合。这直接关联。</li>
+<li><b>高分子网络结构与力学性能</b>：剪纸图案本质上是引入了一种可控的“结构缺陷”，展示了如何通过介观结构放大或抑制材料的本征力学响应。该工作完美证明了“结构决定性能”的高分子理念。</li>
+<li><b>刺激响应材料</b>：使用温度作为刺激（或间接通过光、电刺激引发相变），实现了刚度和形状的可逆调控。回弹速率的变化也是一种主动响应。</li>
+<li><b>软体机器人/电子皮肤</b>：超软夹持器和形状变换器是直接的软体机器人应用。这种通过结构设计实现精细化动力学控制的能力对机器人抓取和自适应感知至关重要。</li>
+</ul>
+<ul>
+<li><b>局限性</b>:</li>
+<li><b>材料疲劳与寿命</b>: 未讨论LCE在多次循环拉伸/回弹或加热/冷却下的力学性能衰减和寿命。液晶基元的旋转疲劳和交联网络的降解是潜在问题。</li>
+<li><b>计算模型的简化</b>: 虽然在多数情况下有效，但论文使用的简单正交各向异性模型（恒定$E_{\perp}$）无法完全捕捉软弹性的非线性，导致与真实实验在较大应变上有偏差。更精确但计算更昂贵的变刚度模型收敛性差。这限制了模型在极端变形下的预测能力。</li>
+<li><b>环境影响</b>: LCE的力学和驱动性能高度依赖于温度。论文主要在恒温或简单变温条件下测试，未探索在复杂环境（如湿度、紫外线、溶剂）下的性能稳定性。</li>
+<li><b>普适性的局限</b>: 耦合机制是否适用于其他类型的驱动软材料（如介电弹性体、水凝胶）尚未验证。<b>软弹性</b>是LCE特有的，这是否是耦合存在的关键前提？</li>
+<li><b>切割精度与可扩展性</b>: 使用激光切割高精度图案是实验室级别的。大规模、低成本的工业化制造（如模压或3D打印）存在挑战。</li>
+</ul>
+<ul>
+<li><b>后续可跟进方向</b>:</li>
+</ul>
+<ol>
+<li><b>理论建模</b>: 建立能够精确描述软弹性非线性与壳结构力学的多尺度本构模型，并实现稳定、高效的数值求解。</li>
+<li><b>其他驱动方式</b>: 研究光、电、化学驱动的LCE与剪纸图案的耦合，以实现更远程、更快速的控制。</li>
+<li><b>3D剪纸</b>: 从2D剪纸扩展到3D剪纸结构，创造出更复杂的、多稳态的、具有负泊松比的主动变形体。</li>
+<li><b>多功能集成</b>: 将传感、驱动、计算功能集成到同一个LCE剪纸原型中，用于软体机器人的本体感知和闭环控制。</li>
+<li><b>其他软材料</b>: 研究该设计范式在其他液晶聚合物、水凝胶、介电弹性体等材料上的适用性。</li>
+</ol>
+<p>APPENDIX_NEEDED: YES，因为补充材料提供了非常重要的细节，如LCE的完整合成方法、不同剪纸图案的尺寸、回弹动力学的数据塌缩分析、用于模拟的非线性材料模型推导、以及多目标形状变形实验的热成像分析等，这些是理解论文核心机理和论证严谨性的关键。</p>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2606.30501" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2606.30501" target="_blank">PDF</a>
+  </div>
+</div>
+
+<div class="card" id="p17">
+  <div class="card-header">
+    <h3>17. 单一化学异质性在产生各向异性触觉灵敏度及软滑动摩擦现象中的作用</h3>
+    <p class="title-en">Role of Single Chemical Heterogeneities in Generating Anisotropic Tactile Sensitivity and Soft Sliding Friction Phenomena</p>
+  </div>
+  <div class="card-meta">
+    <span class="meta-label">arXiv:</span>
+    <a href="https://arxiv.org/abs/2606.30535" target="_blank">2606.30535</a>
+    &nbsp;&nbsp;
+    <span class="meta-label">作者:</span> Kayla A. Hepler, Leanne Ton, Charles B. Dhong
+    &nbsp;&nbsp;
+    <span class="meta-label">分类:</span> cond-mat.soft
+  </div>
+  <div class="card-abstract">
+    <b>摘要:</b> 滑动摩擦中的物理异质性（如人类手指探索物体）已被充分研究，但尽管实际系统中化学与物理变化的普遍性相似，介观软滑动中化学异质性的行为仍未被充分探索。本文通过实验表征了平面软弹性探针在硅片表面两种硅烷界面形成的单一化学异质性上滑动时的摩擦特性。通过构建多荷载与多速度下的相图，我们量化了化学边缘及其附近发生的若干摩擦现象（包括静摩擦尖峰形成、边缘斜率方向、基线偏移及基线漂移），并揭示了这些现象对滑动方向的依赖性。研究发现，由差异更大的材料（丁基封端与氨丙基封端）形成的化学异质性，相较于由相似材料（丁基封端与己基封端）形成的化学异质性，表现出更多与方向无关的现象。我们将这种方向不对称性归因于弹性体效应。后续人类测试（n=36）中观察到，受试者对其中一组材料对（丁基封端与己基封端）表现出方向依赖性准确率差异（66.7%对38.9%），而对另一组（77.8%对75%）则无此现象。结合我们的相图分析，这表明滑动经过化学边缘时的摩擦力斜率对于生成清晰的触觉特征边缘至关重要，而非简单的材料属性差异或其它摩擦现象。
+  </div>
+  <div class="card-notes">
+    <p><code>`</code>markdown</p>
+<h1>阅读笔记：单一化学异质性在产生各向异性触觉敏感性和软滑动摩擦现象中的作用</h1>
+<h2>1. 一句话总结</h2>
+<p>本文通过实验和人类测试，研究了单个化学异质性（两种硅烷界面）在软滑动摩擦中产生的各向异性摩擦现象及其对触觉敏感性的影响。</p>
+<h2>2. 研究问题</h2>
+<ul>
+<li>物理异质性（如指尖滑动）的摩擦研究已较充分，但化学异质性在介观软滑动中的行为尚未被充分探索。</li>
+<li>具体问题：单一化学界面如何影响摩擦现象的方向依赖性？这些现象如何与人类触觉感知相关联？</li>
+</ul>
+<h2>3. 核心方法</h2>
+<ul>
+<li><b>实验设置</b>：使用平面软弹性探针在硅片上两种硅烷形成的单一化学边界上滑动。</li>
+<li><b>构建相图</b>：在不同载荷和速度下，量化多种摩擦现象（如粘滞尖峰形成、边缘斜率方向、基线偏移、基线漂移），并分析其滑动方向依赖性。</li>
+<li><b>人类测试</b>：招募36名受试者，测试他们在不同化学异质性对上的触觉方向识别准确性。</li>
+</ul>
+<h2>4. 主要结果</h2>
+<ul>
+<li><b>化学异质性影响方向依赖性</b>：由差异较大的材料（丁基与氨基丙基）形成的异质性，其摩擦现象多为方向无关；而差异较小的材料（丁基与己基）则表现出方向不对称性，归因于弹性体效应。</li>
+<li><b>人类触觉测试</b>：在丁基与己基对（差异小）上，方向依赖的准确性显著不同（66.7% vs 38.9%）；在丁基与氨基丙基对（差异大）上，准确性接近（77.8% vs 75%）。</li>
+<li><b>关键结论</b>：滑动通过化学边缘时的摩擦力斜率（而非简单的材料属性或其他摩擦现象）对产生清晰的触觉特征边缘至关重要。</li>
+</ul>
+<h2>5. 潜在价值</h2>
+<ul>
+<li>揭示了化学异质性在触觉感知中的独特作用，为触觉传感器设计、软体机器人以及人机交互界面提供了新见解。</li>
+<li>表明摩擦力斜率可能是更关键的触觉编码特征，有助于改进触觉显示和智能材料的开发。</li>
+</ul>
+<p><code>`</code></p>
+  </div>
+  <div class="card-footer">
+    🔗 <a href="https://arxiv.org/abs/2606.30535" target="_blank">原文链接</a>
+    &nbsp;|&nbsp;
+    📄 <a href="https://arxiv.org/pdf/2606.30535" target="_blank">PDF</a>
+  </div>
+</div>
+
+  
+<div class="other-section">
+  <h2>📋 其他相关论文 (101 篇)</h2>
+  <table class="other-table">
+    <tr><th>arXiv ID</th><th>标题</th><th>分类</th></tr>
+    <tr>
+  <td><a href="https://arxiv.org/abs/2606.29717" target="_blank">2606.29717</a></td>
+  <td>优化专家设计的晶体图网络用于带隙预测与一个<br><span style="color:#888;font-size:12px">Optimizing Expert-Designed Crystal Graph Networks for Band-G...</span></td>
+  <td>agent_systems</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29459" target="_blank">2606.29459</a></td>
+  <td>利用大语言模型进行金属有机框架的可解释逆设计<br><span style="color:#888;font-size:12px">Interpretable Inverse Design of Metal-Organic Frameworks wit...</span></td>
+  <td>agent_systems</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29592" target="_blank">2606.29592</a></td>
+  <td>STEMGym: 在剂量预算下对自主...中的序列决策进行基准测试<br><span style="color:#888;font-size:12px">STEMGym: Benchmarking Sequential Decision-Making under Dose ...</span></td>
+  <td>benchmark</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30170" target="_blank">2606.30170</a></td>
+  <td>除了药物发现之外：纳米技术分子优化（NMO）基准<br><span style="color:#888;font-size:12px">Beyond Drug Discovery: The Nanotechnology Molecular Optimiza...</span></td>
+  <td>benchmark</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30041" target="_blank">2606.30041</a></td>
+  <td>粘弹性可压缩肿瘤生长的相场模型<br><span style="color:#888;font-size:12px">A phase-field model for viscoelastic compressible tumor grow...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29838" target="_blank">2606.29838</a></td>
+  <td>泊松-散粒噪声混合机器：效率与准静态发散<br><span style="color:#888;font-size:12px">Poisson-shot-noise hybrid machines: efficiency and quasistat...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29843" target="_blank">2606.29843</a></td>
+  <td>基于引导扩散模型的气泡流缺失重建<br><span style="color:#888;font-size:12px">Gappy Reconstruction of Bubbly Flows by Guided Diffusion Mod...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2603.25842" target="_blank">2603.25842</a></td>
+  <td>场控活性自旋系统中的界面输运与钉扎<br><span style="color:#888;font-size:12px">Field-controlled interfacial transport and pinning in an act...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2605.22790" target="_blank">2605.22790</a></td>
+  <td>用于活检取样的空心针穿刺力学<br><span style="color:#888;font-size:12px">Hollow Needle Puncture Mechanics for Biopsy Sampling</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28440" target="_blank">2606.28440</a></td>
+  <td>TF-1和PbWO₄晶体在20 MeV电子辐照下的辐射损伤<br><span style="color:#888;font-size:12px">Radiation Damage of TF-1 and PbWO$_4$ Crystals with 20 MeV E...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28458" target="_blank">2606.28458</a></td>
+  <td>mCGCNN: 一种用于高效...的双流晶体图卷积神经网络<br><span style="color:#888;font-size:12px">mCGCNN: A Dual-Stream Crystal Graph Convolutional Neural Net...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28508" target="_blank">2606.28508</a></td>
+  <td>微观与宏观表征：分子束外延生长与溅射沉积的对比<br><span style="color:#888;font-size:12px">Microscopic and macroscopic characterization: MBE-grown vers...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28578" target="_blank">2606.28578</a></td>
+  <td>面向贝叶斯材料的代理门控生成与基础模型嵌入<br><span style="color:#888;font-size:12px">Surrogate-Gated Generation and Foundation-Model Embeddings f...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28658" target="_blank">2606.28658</a></td>
+  <td>迁移过程中晶界的结构弛豫与停滞<br><span style="color:#888;font-size:12px">Structural relaxation and stagnation of grain boundary durin...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28668" target="_blank">2606.28668</a></td>
+  <td>室温范德瓦尔斯铁磁体中超快磁性的应变工程<br><span style="color:#888;font-size:12px">Strain engineering of ultrafast magnetism in the room-temper...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28713" target="_blank">2606.28713</a></td>
+  <td>通过载流子掺杂实现半半导体行为和可调磁性的涌现<br><span style="color:#888;font-size:12px">Emergence of half-semiconductor behavior and tunable magneti...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28941" target="_blank">2606.28941</a></td>
+  <td>硒直接掺杂获得了高性能n型Bi2Te3基热电<br><span style="color:#888;font-size:12px">Selenium direct doping obtained high-performance-n-type Bi2T...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28983" target="_blank">2606.28983</a></td>
+  <td>一维 $\mathrm{Cs}_2\mathrm{CoCl}_4$ 受限的结构性质<br><span style="color:#888;font-size:12px">Structural properties of one-dimensional $\mathrm{Cs}_2\math...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29055" target="_blank">2606.29055</a></td>
+  <td>金刚石中固有位错环形成的金兹堡-朗道理论<br><span style="color:#888;font-size:12px">A Ginzburg-Landau theory of intrinsic dislocation-loop forma...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29061" target="_blank">2606.29061</a></td>
+  <td>扁椭球激发理论：塑性的统一无晶格基础<br><span style="color:#888;font-size:12px">Oblate Spheroid Excitation Theory: A Unified, Lattice-Free F...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29140" target="_blank">2606.29140</a></td>
+  <td>候选d-w中不同磁构型的实空间识别<br><span style="color:#888;font-size:12px">Real-space identification of distinct magnetic configuration...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29163" target="_blank">2606.29163</a></td>
+  <td>动力学控制的凝结边界控制铟在I中的掺入<br><span style="color:#888;font-size:12px">Kinetically Controlled Condensation Boundary Governing Indiu...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29219" target="_blank">2606.29219</a></td>
+  <td>硅兼容的理想反铁电性及其大数字机电<br><span style="color:#888;font-size:12px">Silicon-compatible ideal antiferroelectricity with large dig...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29257" target="_blank">2606.29257</a></td>
+  <td>基于线性不可逆的多孔电极多物理阻抗谱<br><span style="color:#888;font-size:12px">Multiphysical impedance spectroscopy of porous electrodes ba...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29258" target="_blank">2606.29258</a></td>
+  <td>反铁磁体中的应变驱动畴壁<br><span style="color:#888;font-size:12px">Strain-Driven Domain Walls in Antiferromagnets</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29456" target="_blank">2606.29456</a></td>
+  <td>铁弹体中的双线性弯曲-反铁畸变耦合：极性孪晶，Antip<br><span style="color:#888;font-size:12px">Bilinear Flexo-Antiferrodistortive Coupling in Ferroelastics...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29729" target="_blank">2606.29729</a></td>
+  <td>原子级薄超低介电常数无定形碳<br><span style="color:#888;font-size:12px">Atomically Thin Amorphous Carbon with an Ultralow Dielectric...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29747" target="_blank">2606.29747</a></td>
+  <td>用于预测晶格热导率的替代原子距离模型<br><span style="color:#888;font-size:12px">The substitutional atomic distance model for predicting latt...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29765" target="_blank">2606.29765</a></td>
+  <td>铁电霍尔效应：由热梯度驱动的极化横向累积<br><span style="color:#888;font-size:12px">Ferron Hall effect: Transverse accumulation of polarization ...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29813" target="_blank">2606.29813</a></td>
+  <td>场诱导的拓扑霍尔效应和蝶形磁电阻在<br><span style="color:#888;font-size:12px">Field-induced topological Hall effect and butterfly-shaped m...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29935" target="_blank">2606.29935</a></td>
+  <td>基于温度依赖结构的Bi0.5Na0.5TiO3的一致转变模型<br><span style="color:#888;font-size:12px">Consistent transition model for Bi0.5Na0.5TiO3 from temperat...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30004" target="_blank">2606.30004</a></td>
+  <td>色散律的解析近似与超复杂电导率诊断<br><span style="color:#888;font-size:12px">Analytical approximations of dispersion laws and ultra-compl...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30065" target="_blank">2606.30065</a></td>
+  <td>声子驱动的Floquet-Bloch态通过量子拍频光谱学探测<br><span style="color:#888;font-size:12px">Phonon-driven Floquet-Bloch states probed by quantum beat sp...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30066" target="_blank">2606.30066</a></td>
+  <td>二十面体准晶Cd5.7Yb的简约结构模型<br><span style="color:#888;font-size:12px">A parsimonious structure model for the icosahedral quasicrys...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30125" target="_blank">2606.30125</a></td>
+  <td>RbSCN中的铁弹性畴壁运动和集体畴切换<br><span style="color:#888;font-size:12px">Ferroelastic domain wall motion and collective domain switch...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30234" target="_blank">2606.30234</a></td>
+  <td>硼辅助稳定低电阻率混合价态Cu-O薄膜pr<br><span style="color:#888;font-size:12px">Boron-assisted stabilization of low-resistivity mixed-valenc...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30334" target="_blank">2606.30334</a></td>
+  <td>类型I和类型II超快退磁动力学的贝叶斯模型比较<br><span style="color:#888;font-size:12px">Bayesian model comparison of type-I and type-II ultrafast de...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30361" target="_blank">2606.30361</a></td>
+  <td>揭示离子辐照MoS₂场效应晶体管中的隐藏缺陷化学<br><span style="color:#888;font-size:12px">Hidden Defect Chemistry in Ion-Irradiated MoS$_2$ Field-Effe...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30472" target="_blank">2606.30472</a></td>
+  <td>用AFM尖端机械操控石墨烯自动剪纸<br><span style="color:#888;font-size:12px">Mechanical Manipulation of Graphene Auto-Kirigami with an AF...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30540" target="_blank">2606.30540</a></td>
+  <td>高熵硼化物的可合成性与力学性能：第一性原理<br><span style="color:#888;font-size:12px">Synthesizability and Mechanical Properties of High-Entropy B...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30585" target="_blank">2606.30585</a></td>
+  <td>使用线性标度Bethe-Salp方法的无序大尺寸氮化硼层中的激子<br><span style="color:#888;font-size:12px">Excitons in Large Disordered Boron-Nitride Layer using Linea...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28528" target="_blank">2606.28528</a></td>
+  <td>通过聚焦离子束在金刚石中高产率创建锗空位中心<br><span style="color:#888;font-size:12px">High yield creation of germanium vacancy centers in diamond ...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28582" target="_blank">2606.28582</a></td>
+  <td>UNi的零场和加场霍尔效应的磁对称性含义<br><span style="color:#888;font-size:12px">Magnetic symmetry implications of the zero- and applied-fiel...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28695" target="_blank">2606.28695</a></td>
+  <td>高保真度空穴自旋量子比特揭示四极核浴动力学在Isoto中<br><span style="color:#888;font-size:12px">High-Fidelity Hole Spin Qubits Reveal Quadrupolar Nuclear-Ba...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28735" target="_blank">2606.28735</a></td>
+  <td>Ni$^{1+}$ 矩与间隙带在双无限中的反常行为<br><span style="color:#888;font-size:12px">Anomalous Behavior of the Ni$^{1+}$ moment and interstitial ...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28776" target="_blank">2606.28776</a></td>
+  <td>定制的应变硅/硅锗界面处二维电子或空穴气的性质：A Firs<br><span style="color:#888;font-size:12px">Properties of 2D Electron or Hole Gases at Tailored s-Si/SiG...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28905" target="_blank">2606.28905</a></td>
+  <td>基于投影的红外热成像与基于立体相关的d的耦合<br><span style="color:#888;font-size:12px">Projection-based coupling of infrared thermography and stere...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28911" target="_blank">2606.28911</a></td>
+  <td>MALOQ：量子输运算符的大规模加速学习<br><span style="color:#888;font-size:12px">MALOQ: Massively Accelerated Learning of Operators for Quant...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29127" target="_blank">2606.29127</a></td>
+  <td>硅纳米线波导中双光子吸收高速动力学的特性<br><span style="color:#888;font-size:12px">Peculiarities Of High-Speed Dynamics Of Two-Photon Absorptio...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29220" target="_blank">2606.29220</a></td>
+  <td>用于晶体结构预测的潜遗传算法<br><span style="color:#888;font-size:12px">Latent Genetic Algorithm for Crystal Structure Prediction</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29262" target="_blank">2606.29262</a></td>
+  <td>量子点超晶格的电子离域与发射相干性<br><span style="color:#888;font-size:12px">Electron Delocalization versus Emission Coherence of Quantum...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29584" target="_blank">2606.29584</a></td>
+  <td>几何代数遇见笛卡尔张量：用于Interat的高阶等变性<br><span style="color:#888;font-size:12px">Geometric Algebra Meets Cartesian Tensors: Higher-Order Equi...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29663" target="_blank">2606.29663</a></td>
+  <td>量子几何非线性电导的长度-速度规范等价性<br><span style="color:#888;font-size:12px">Length--Velocity Gauge Equivalence of Quantum Geometric Nonl...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29696" target="_blank">2606.29696</a></td>
+  <td>通过最优调谐杂化泛函的DFT热基本能隙预测<br><span style="color:#888;font-size:12px">Thermal Fundamental Gap Predictions in DFT via Optimally Tun...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29975" target="_blank">2606.29975</a></td>
+  <td>Atompack：面向读密集型原子机器学习训练的存储与分发层<br><span style="color:#888;font-size:12px">Atompack: A Storage and Distribution Layer for Read-Heavy At...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29996" target="_blank">2606.29996</a></td>
+  <td>可重构非厄米超堆叠中的动态拓扑光控制<br><span style="color:#888;font-size:12px">Dynamic Topological Light Control in Reconfigurable Non-Herm...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30214" target="_blank">2606.30214</a></td>
+  <td>将二维共线磁体卷成具有$p$-Wave Ma的手性纳米管<br><span style="color:#888;font-size:12px">Rolling Two-Dimensional Collinear Magnets into Chiral Nanotu...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2503.06039" target="_blank">2503.06039</a></td>
+  <td>温度驱动的SmNiO$_3$结构相变：来自深度的洞察<br><span style="color:#888;font-size:12px">Temperature-driven structural phase transitions in SmNiO$_3$...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2509.19968" target="_blank">2509.19968</a></td>
+  <td>高效的大正则全局优化与在线训练的机器学习<br><span style="color:#888;font-size:12px">Efficient Grand Canonical Global Optimization with On-the-fl...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2511.10485" target="_blank">2511.10485</a></td>
+  <td>弛豫方法用于铁电和反铁电的量子力学建模<br><span style="color:#888;font-size:12px">Relaxation approach to quantum-mechanical modeling of ferroe...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2601.07188" target="_blank">2601.07188</a></td>
+  <td>用于扫描ensembl的聚焦离子束制备金刚石柱的改进<br><span style="color:#888;font-size:12px">Improvement of a focused ion beam fabricated diamond pillar ...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2601.21077" target="_blank">2601.21077</a></td>
+  <td>采用生成模型和层次化方法加速无机电子化物的发现<br><span style="color:#888;font-size:12px">Accelerated Inorganic Electrides Discovery by Generative Mod...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2605.01156" target="_blank">2605.01156</a></td>
+  <td>脆性固体材料强度的理性力学<br><span style="color:#888;font-size:12px">Rational Mechanics of Material Strength in Brittle Solids</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.08916" target="_blank">2606.08916</a></td>
+  <td>zi中的磁有序和低温磁热响应的化学调控<br><span style="color:#888;font-size:12px">Chemical tuning of magnetic ordering and cryogenic magnetoca...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.23725" target="_blank">2606.23725</a></td>
+  <td>计算参考不是实验：machi的预注册验证<br><span style="color:#888;font-size:12px">Computational references are not experiments: pre-registered...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.27723" target="_blank">2606.27723</a></td>
+  <td>通过高通量电子束的空位介导氮扩散与聚集<br><span style="color:#888;font-size:12px">Vacancy-mediated nitrogen diffusion and aggregation via high...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2506.17474" target="_blank">2506.17474</a></td>
+  <td>通过原子 l 提高铝基超导量子比特的寿命<br><span style="color:#888;font-size:12px">Improving the lifetime of aluminum-based superconducting qub...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2601.02820" target="_blank">2601.02820</a></td>
+  <td>类范德瓦尔斯近藤晶格CeSn$_{0.75}$中可能存在的反磁融化效应<br><span style="color:#888;font-size:12px">Possible inverse magnetic melting effect in vdW-like Kondo l...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2604.12174" target="_blank">2604.12174</a></td>
+  <td>天然范德华氧化物中的可调极化激元通道化<br><span style="color:#888;font-size:12px">Tunable Polariton Canalization in Natural van der Waals Oxid...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2605.25063" target="_blank">2605.25063</a></td>
+  <td>基于双层世界模型架构的强化学习用于扫描顺序操作<br><span style="color:#888;font-size:12px">Reinforcement Learning with a Bilevel World-Model Architectu...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.27121" target="_blank">2606.27121</a></td>
+  <td>带间自旋-轨道耦合驱动的手性系统中的磁电阻<br><span style="color:#888;font-size:12px">Magnetoresistance in chiral systems driven by inter-band spi...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.27204" target="_blank">2606.27204</a></td>
+  <td>费米哈伯德模型中莫特绝缘体性的有限温度前兆<br><span style="color:#888;font-size:12px">Finite temperature precursors of Mottness in the Fermi Hubba...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30221" target="_blank">2606.30221</a></td>
+  <td>氢基金属氧化物还原中水是如何释放的？揭示Ki<br><span style="color:#888;font-size:12px">How is Water released in Hydrogen-Based Metal Oxide Reductio...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30331" target="_blank">2606.30331</a></td>
+  <td>强场电离和解离动力学中的尺寸效应（(H$_2$O<br><span style="color:#888;font-size:12px">Size Effects in the Strong-Field Ionization and Dissociation...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28640" target="_blank">2606.28640</a></td>
+  <td>薛定谔方程在复平面与量子纠缠中的描述<br><span style="color:#888;font-size:12px">The Schr\"{o}dinger equation in the complex plane and quantu...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29133" target="_blank">2606.29133</a></td>
+  <td>经典张量网络模拟的影子层析<br><span style="color:#888;font-size:12px">Shadow tomography for classical tensor network simulations</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29547" target="_blank">2606.29547</a></td>
+  <td>使用T进行分子激发态流形和能量的量子模拟<br><span style="color:#888;font-size:12px">Quantum simulation of molecular excited-state manifolds and ...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30123" target="_blank">2606.30123</a></td>
+  <td>动态结构因子三次求和规则给出的动能<br><span style="color:#888;font-size:12px">Kinetic energy from the cubic sum rule of the dynamic struct...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30235" target="_blank">2606.30235</a></td>
+  <td>在克隆体的攻击中幸存<br><span style="color:#888;font-size:12px">Surviving the Attack of the Clones</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30402" target="_blank">2606.30402</a></td>
+  <td>聚变堆包层熔盐的量子计算<br><span style="color:#888;font-size:12px">Quantum Computations on Fusion Blanket Molten Salts</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30551" target="_blank">2606.30551</a></td>
+  <td>桥接NISQ与容错范式：生成式机器学习辅助的量子Sel<br><span style="color:#888;font-size:12px">Bridging the NISQ and Fault-Tolerant Regimes: Generative-ML-...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30569" target="_blank">2606.30569</a></td>
+  <td>重新审视通过HEOM或模拟的开放量子系统中的交叉关联浴<br><span style="color:#888;font-size:12px">Revisiting crossed-correlated baths in open quantum systems ...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2509.23731" target="_blank">2509.23731</a></td>
+  <td>针对流变性分子CH5+光谱的神经正则变换<br><span style="color:#888;font-size:12px">Neural Canonical Transformation for the Spectra of Fluxional...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2512.05758" target="_blank">2512.05758</a></td>
+  <td>偶极液体中的铁电性：退火位置无序的作用<br><span style="color:#888;font-size:12px">Ferroelectricity in dipolar liquids: the role of annealed po...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.01535" target="_blank">2606.01535</a></td>
+  <td>变分自由补方法中的高斯展开补充函数：<br><span style="color:#888;font-size:12px">Variational free complement method with Gaussian-expanded co...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.20105" target="_blank">2606.20105</a></td>
+  <td>DFT训练的神经网络势能否重现结构、溶剂化和水<br><span style="color:#888;font-size:12px">Can DFT-trained neural network potentials reproduce structur...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2509.21624" target="_blank">2509.21624</a></td>
+  <td>从HIP出发：无导数的海森原子间势<br><span style="color:#888;font-size:12px">Shoot from the HIP: Hessian Interatomic Potentials without d...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.20166" target="_blank">2606.20166</a></td>
+  <td>量子退火在磁偶极子超精细结构常数中的应用<br><span style="color:#888;font-size:12px">Applications of quantum annealing to magnetic dipole hyperfi...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.28942" target="_blank">2606.28942</a></td>
+  <td>具有深蚀刻场终止的垂直 $\beta$-Ga$_2$O$_3$ 肖特基二极管<br><span style="color:#888;font-size:12px">Vertical $\beta$-Ga$_2$O$_3$ Schottky Diodes with Deep-Etch ...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29637" target="_blank">2606.29637</a></td>
+  <td>降雪条件下的亚太赫兹信道性能<br><span style="color:#888;font-size:12px">Sub-Terahertz Channel Performance under Snowfall</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29995" target="_blank">2606.29995</a></td>
+  <td>具有局部电学功能的宽带磁振子谱仪的设计与实现<br><span style="color:#888;font-size:12px">Design and Realization of Broadband Magnonic Spectrometers W...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30007" target="_blank">2606.30007</a></td>
+  <td>用拓扑数据分析探究光-物质相互作用<br><span style="color:#888;font-size:12px">Probing Light-Matter Interaction with Topological Data Analy...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30359" target="_blank">2606.30359</a></td>
+  <td>光伏自消费在下降的el下的决策支持策略<br><span style="color:#888;font-size:12px">Decision-support strategies for photovoltaic self-consumptio...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29589" target="_blank">2606.29589</a></td>
+  <td>EchoHawk：一种可复现的无人机检测与分类声学流水线，<br><span style="color:#888;font-size:12px">EchoHawk: A Reproducible Acoustic Pipeline for Drone Detecti...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30591" target="_blank">2606.30591</a></td>
+  <td>用于悬浮实验的微加工制备的金和Au/石墨烯双层片层<br><span style="color:#888;font-size:12px">Microfabricated Au and Au/graphene bilayer platelets for lev...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.30604" target="_blank">2606.30604</a></td>
+  <td>集体迁移动力学中的脉冲、波和级联<br><span style="color:#888;font-size:12px">Pulses, waves, and cascades in collective migration dynamics</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2604.15835" target="_blank">2604.15835</a></td>
+  <td>频率选择性降雨衰减对太赫兹信道的影响<br><span style="color:#888;font-size:12px">Frequency-Selective Rain Attenuation on Terahertz Channels</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2605.13057" target="_blank">2605.13057</a></td>
+  <td>超声微结构表征中的可辨识性极限：一个卡诺尼卡<br><span style="color:#888;font-size:12px">Identifiability Limits in Ultrasonic Microstructure Characte...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2503.18153" target="_blank">2503.18153</a></td>
+  <td>光镊中的米氏共振：在运动学和反作用中的角色<br><span style="color:#888;font-size:12px">Mie resonances in optical trapping: Their role in kinematics...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2605.01469" target="_blank">2605.01469</a></td>
+  <td>实空间成像揭示了对称性选择的非线性能量路由在一种机械中<br><span style="color:#888;font-size:12px">Real-space imaging reveals symmetry-selected nonlinear energ...</span></td>
+  <td>general</td>
+</tr><tr>
+  <td><a href="https://arxiv.org/abs/2606.29667" target="_blank">2606.29667</a></td>
+  <td>解锁材料科学的视觉记录：一个大规模多模态数据集<br><span style="color:#888;font-size:12px">Unlocking the Visual Record of Materials Science: A Large-Sc...</span></td>
+  <td>multimodal</td>
+</tr>
+  </table>
+</div>
+</div>
+</body>
+</html>

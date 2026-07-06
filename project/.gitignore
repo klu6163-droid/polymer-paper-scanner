@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Environment & secrets
+.env
+.venv/
+venv/
+
+# Logs
+daily_scan_*.log
+run_*.log
+
+# Data (generated daily, not tracked)
+daily_papers/
+
+# Cache
+.daily_known_ids.json
+.cache/
+
+# WorkBuddy internal
+.workbuddy/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
