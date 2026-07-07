@@ -83,18 +83,20 @@ def _load_db(db_path: Path) -> dict:
 
 def _save_db(db_path: Path, ids: set[str], last_run: date) -> None:
     db_path.parent.mkdir(parents=True, exist_ok=True)
-    db_path.write_text(
-        json.dumps(
-            {
-                "processed_ids": sorted(ids),
-                "last_run": last_run.isoformat(),
-                "updated": datetime.now().isoformat(),
-            },
-            ensure_ascii=False,
-            indent=2,
-        ),
-        encoding="utf-8",
+    payload = json.dumps(
+        {
+            "processed_ids": sorted(ids),
+            "last_run": last_run.isoformat(),
+            "updated": datetime.now().isoformat(),
+        },
+        ensure_ascii=False,
+        indent=2,
     )
+    # 原子写：先写 .tmp 再 os.replace，避免写一半崩溃导致已知 ID 库损坏
+    # （损坏会让下次运行重复抓取已处理过的论文）。
+    tmp_path = db_path.parent / (db_path.name + ".tmp")
+    tmp_path.write_text(payload, encoding="utf-8")
+    os.replace(tmp_path, db_path)
 
 
 # ── Main logic ───────────────────────────────────────────────

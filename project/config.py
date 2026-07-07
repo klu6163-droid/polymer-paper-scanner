@@ -45,6 +45,13 @@ RSS_PARALLEL = os.getenv("RSS_PARALLEL", "1") == "1"     # 是否并行拉取分
 EPRINT_TIMEOUT = int(os.getenv("EPRINT_TIMEOUT", "60"))  # e-print 下载超时(秒)
 EPRINT_MAX_RETRIES = int(os.getenv("EPRINT_MAX_RETRIES", "3"))
 
+# ── 礼貌性配置 ───────────────────────────────────────────────
+# 真实联系邮箱：写入 User-Agent 与 OpenAlex mailto，进 polite pool。
+# 留空则 UA 不带邮箱、OpenAlex 用占位符。
+CONTACT_EMAIL = os.getenv("CONTACT_EMAIL", "").strip()
+# 两次 e-print 下载之间的最小间隔(秒)，防止深读批量下载时被 arXiv 限流。
+EPRINT_MIN_INTERVAL = float(os.getenv("EPRINT_MIN_INTERVAL", "3.0"))
+
 # ── OpenAlex 补充数据源 ──────────────────────────────────────
 OPENALEX_ENABLED = os.getenv("OPENALEX_ENABLED", "0") == "1"
 OPENALEX_BASE = "https://api.openalex.org"

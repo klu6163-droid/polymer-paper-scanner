@@ -51,11 +51,17 @@ class ArxivFetcher:
         self.categories = config.ARXIV_CATEGORIES
         self.max_results = config.ARXIV_MAX_RESULTS
 
-        # Shared session for connection pooling + consistent headers
+        # Shared session for connection pooling + consistent headers.
+        # UA carries the real repo URL + contact email (when configured) so
+        # arXiv / OpenAlex can reach us and we land in their polite pool.
+        ua = "PolymerPaperScanner/1.0 (https://github.com/klu6163-droid/polymer-paper-scanner)"
+        if config.CONTACT_EMAIL:
+            ua += f" (mailto:{config.CONTACT_EMAIL})"
         self._session = requests.Session()
-        self._session.headers.update({
-            "User-Agent": "PolymerPaperScanner/1.0 (https://github.com/arxiv-polymer)"
-        })
+        self._session.headers.update({"User-Agent": ua})
+
+        # Last e-print download timestamp (monotonic), for throttling.
+        self._last_eprint_time = 0.0
 
     # ── Paper listing ─────────────────────────────────────────
 
@@ -447,13 +453,25 @@ class ArxivFetcher:
 
         1. Try `arxiv_to_prompt` library (if installed).
         2. Fall back to manual e-print download with timeout + retry.
+
+        Throttled at this entry point so a deep-read batch can't hammer
+        arXiv's e-print endpoint regardless of which path downloads.
         """
+        # Pace every LaTeX fetch (covers both arxiv_to_prompt and manual).
+        self._throttle_eprint()
+
         # ── Method 1: arxiv_to_prompt ──
         try:
             from arxiv_to_prompt import process_latex_source
 
             logger.info(f"  Fetching source via arxiv_to_prompt: {arxiv_id}")
-            return process_latex_source(arxiv_id, keep_comments=False)
+            src = process_latex_source(arxiv_id, keep_comments=False)
+            if src:
+                return src
+            # arxiv_to_prompt returns None/"" on internal failure instead of
+            # raising — fall through to the manual path so the throttle +
+            # retry logic actually governs.
+            logger.warning(f"  arxiv_to_prompt returned empty for {arxiv_id}")
         except ImportError:
             pass
         except Exception as e:
@@ -463,8 +481,28 @@ class ArxivFetcher:
         logger.info(f"  Falling back to manual e-print: {arxiv_id}")
         return self._fetch_eprint_manual(arxiv_id)
 
+    def _throttle_eprint(self) -> None:
+        """Enforce a min interval between e-print downloads (politeness).
+
+        Deep-reading N polymer papers fires N back-to-back e-print requests;
+        arXiv asks for ~1 req/3s, so without this a large batch trips rate
+        limits / IP bans. Retries already back off internally — this only
+        paces *between* papers.
+        """
+        min_interval = config.EPRINT_MIN_INTERVAL
+        if min_interval <= 0:
+            return
+        elapsed = time.monotonic() - self._last_eprint_time
+        if elapsed < min_interval:
+            time.sleep(min_interval - elapsed)
+        self._last_eprint_time = time.monotonic()
+
     def _fetch_eprint_manual(self, arxiv_id: str) -> Optional[str]:
-        """Download e-print tar.gz from arXiv with timeout + retry."""
+        """Download e-print tar.gz from arXiv with timeout + retry.
+
+        Throttling is the caller's job (fetch_latex_source) so we don't
+        double-sleep when reached via the normal path.
+        """
         url = f"{config.ARXIV_BASE}/e-print/{arxiv_id}"
         max_retries = config.EPRINT_MAX_RETRIES
         timeout = config.EPRINT_TIMEOUT
@@ -656,7 +694,7 @@ class ArxivFetcher:
             ),
             "per_page": 200,
             "sort": "publication_date:desc",
-            "mailto": "polymer-scanner@example.com",
+            "mailto": config.CONTACT_EMAIL or "polymer-scanner@example.com",
         }
 
         resp = self._fetch_with_retry(
